@@ -7,12 +7,6 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="Administrators_module" />
-        <module name="Integral_module" />
-        <module name="Vehicle_module" />
-        <module name="ParkingLot_module" />
-        <module name="Order_module" />
-        <module name="User_module" />
       </profile>
     </annotationProcessing>
   </component>
@@ -22,6 +16,7 @@
       <module name="Integral_module" options="-parameters" />
       <module name="Order_module" options="-parameters" />
       <module name="ParkingLot_module" options="-parameters" />
+      <module name="Smart_parking_server" options="-parameters" />
       <module name="User_module" options="-parameters" />
       <module name="Vehicle_module" options="-parameters" />
     </option>

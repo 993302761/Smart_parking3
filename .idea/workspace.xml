@@ -5,16 +5,28 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5165a8d4-14ee-4222-9aca-054a42b0ef5a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Administrators_module/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Integral_module/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ParkingLot_module/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ProjectSetUp/java设置.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ProjectSetUp/字符编码.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ProjectSetUp/注解激活.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/User_module/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Vehicle_module/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SmartParkingServer/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Order_module/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Smart_parking_server/Administrators_module/src/main/java/administrators/AdministratorsApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Smart_parking_server/Administrators_module/src/main/java/administrators/Degradation/UserFeignServiceDegradation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Smart_parking_server/Administrators_module/src/main/java/administrators/controller/AdministratorsController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Smart_parking_server/Administrators_module/src/main/java/administrators/dao/AdministratorsDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Smart_parking_server/Administrators_module/src/main/java/administrators/entity/Administrators.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Smart_parking_server/Administrators_module/src/main/java/administrators/serviceImpl/AdministratorsServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Smart_parking_server/Administrators_module/src/main/java/administrators/swagger/SwaggerTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Smart_parking_server/Administrators_module/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Smart_parking_server/Administrators_module/src/main/resources/bootstrap.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Smart_parking_server/Administrators_module/src/main/resources/log4j2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Smart_parking_server/Order_module/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Smart_parking_server/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Administrators_module/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Smart_parking_server/Administrators_module/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Integral_module/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Smart_parking_server/Integral_module/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Order_module/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ParkingLot_module/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Smart_parking_server/ParkingLot_module/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/User_module/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Smart_parking_server/User_module/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Vehicle_module/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Smart_parking_server/Vehicle_module/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -48,18 +60,25 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="jdk.selected.JAVA_MODULE" value="1.8" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/ProjectSetUp" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/Administrators_module/src/main/resources" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Modules" />
-    <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.37320977" />
     <property name="settings.editor.selected.configurable" value="preferences.fileTypes" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Administrators_module/src/main/resources" />
+      <recent name="$PROJECT_DIR$/Administrators_module/src/main/java" />
       <recent name="$PROJECT_DIR$/ProjectSetUp" />
       <recent name="$PROJECT_DIR$" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Smart_parking_server" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -74,6 +93,7 @@
       <workItem from="1663572785456" duration="1741000" />
       <workItem from="1663574544851" duration="566000" />
       <workItem from="1663766084230" duration="2949000" />
+      <workItem from="1663822235034" duration="4048000" />
     </task>
     <servers />
   </component>
