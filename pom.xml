@@ -8,7 +8,12 @@
   <artifactId>Smart_parking3</artifactId>
   <version>1.0-SNAPSHOT</version>
   <modules>
-    <module>SmartParkingServer</module>
+    <module>Order_module</module>
+    <module>User_module</module>
+    <module>ParkingLot_module</module>
+    <module>Vehicle_module</module>
+    <module>Administrators_module</module>
+    <module>Integral_module</module>
   </modules>
   <packaging>pom</packaging>
 

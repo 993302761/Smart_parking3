@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="Administrators_module" />
+        <module name="Integral_module" />
+        <module name="Vehicle_module" />
+        <module name="ParkingLot_module" />
+        <module name="Order_module" />
+        <module name="User_module" />
+      </profile>
+    </annotationProcessing>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="Administrators_module" options="-parameters" />
+      <module name="Integral_module" options="-parameters" />
+      <module name="Order_module" options="-parameters" />
+      <module name="ParkingLot_module" options="-parameters" />
+      <module name="User_module" options="-parameters" />
+      <module name="Vehicle_module" options="-parameters" />
+    </option>
+  </component>
+</project>
