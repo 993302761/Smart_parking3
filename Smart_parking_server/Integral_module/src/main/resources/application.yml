@@ -1,0 +1,12 @@
+server:
+  port: 9005
+
+spring:
+  #  服务名称------服务名称不能使用下划线，删除下划线或者使用中划线
+  application:
+    name: ClientIntegral
+
+  rabbitmq:
+    listener:
+      simple:
+        prefetch: 1   #每次只能获取一条消息，处理完才能获取下一条（提升消息处理速度，避免消息堆积）

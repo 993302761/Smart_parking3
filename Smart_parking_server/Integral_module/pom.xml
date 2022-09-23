@@ -17,4 +17,18 @@
         <maven.compiler.target>8</maven.compiler.target>
     </properties>
 
+    <dependencies>
+        <dependency>
+            <groupId>org.example</groupId>
+            <artifactId>BasicTools</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+
+<!--        RabbitMQ消息序列化改为JSON         -->
+        <dependency>
+            <groupId>com.fasterxml.jackson.dataformat</groupId>
+            <artifactId>jackson-dataformat-xml</artifactId>
+        </dependency>
+
+    </dependencies>
 </project>

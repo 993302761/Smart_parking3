@@ -1,8 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="Encoding" native2AsciiForPropertiesFiles="true" defaultCharsetForPropertiesFiles="UTF-8">
+    <file url="file://$PROJECT_DIR$/FastDFS/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/FastDFS/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/Smart_parking_server/Administrators_module/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/Smart_parking_server/Administrators_module/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Smart_parking_server/BasicTools/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Smart_parking_server/BasicTools/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/Smart_parking_server/Integral_module/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/Smart_parking_server/Integral_module/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/Smart_parking_server/Order_module/src/main/java" charset="UTF-8" />

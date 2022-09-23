@@ -19,6 +19,8 @@
         <module>ParkingLot_module</module>
         <module>User_module</module>
         <module>Vehicle_module</module>
+        <module>BasicTools</module>
+
     </modules>
 
     <dependencies>
