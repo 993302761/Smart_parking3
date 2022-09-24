@@ -9,6 +9,9 @@
         <outputRelativeToContentRoot value="true" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="demo" target="1.8" />
+    </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
@@ -17,9 +20,10 @@
       <module name="Integral_module" options="" />
       <module name="Order_module" options="" />
       <module name="ParkingLot_module" options="" />
-      <module name="Smart_parking_server" options="" />
+      <module name="Smart_parking_server" options="-parameters" />
       <module name="User_module" options="" />
-      <module name="Vehicle_module" options="-parameters" />
+      <module name="Vehicle_module" options="" />
+      <module name="demo" options="-parameters" />
     </option>
   </component>
 </project>

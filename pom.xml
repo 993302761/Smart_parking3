@@ -30,7 +30,6 @@
     <junit.version>4.13.2</junit.version>
     <log4j.version>1.2.17</log4j.version>
     <lombok.version>1.16.18</lombok.version>
-    <mysql.version>5.1.47</mysql.version>
   </properties>
 
 <!--dependencyManagement只有最顶点的父工程才使用
@@ -90,7 +89,7 @@
       <artifactId>spring-boot-starter-test</artifactId>
     </dependency>
 
-<!--bus-RabbitMQ-->
+    <!--    bus-RabbitMQ    -->
     <dependency>
       <groupId>org.springframework.cloud</groupId>
       <artifactId>spring-cloud-starter-bus-amqp</artifactId>
