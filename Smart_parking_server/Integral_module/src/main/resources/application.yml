@@ -2,11 +2,21 @@ server:
   port: 9005
 
 spring:
-  #  服务名称------服务名称不能使用下划线，删除下划线或者使用中划线
-  application:
-    name: ClientIntegral
 
+
+  datasource:
+    url: jdbc:mysql://localhost:3306/Smart_parking_data?useUnicode=true&characterEncoding=UTF-8
+    username: root
+    password: "001124"
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+    #rabbitmq相关配置
   rabbitmq:
+    host: localhost
+    port: 5672
+    username: guest
+    password:  guest
     listener:
       simple:
         prefetch: 1   #每次只能获取一条消息，处理完才能获取下一条（提升消息处理速度，避免消息堆积）
+

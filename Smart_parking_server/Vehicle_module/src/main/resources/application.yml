@@ -1,5 +1,5 @@
 server:
-  port: 9000
+  port: 9004
 
 
 spring:
@@ -19,13 +19,4 @@ spring:
     listener:
       simple:
         prefetch: 1   #每次只能获取一条消息，处理完才能获取下一条（提升消息处理速度，避免消息堆积）
-
-
-
-#指定日志级别
-logging:
-  level:
-    com.example.administrators: info
-  config: classpath:log4j2.xml
-
 
