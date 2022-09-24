@@ -2,9 +2,6 @@ package com.example.administrators.service;
 
 import com.example.administrators.dao.AdministratorsDao;
 import com.example.administrators.entity.Administrators;
-import com.feign.api.service.OrderFeignService;
-import com.feign.api.service.ParkingLotFeignService;
-import com.feign.api.service.UserFeignService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Service;
@@ -37,11 +34,11 @@ public class AdministratorsServiceImpl {
      * @param ctr_password 超级管理员密码
      * @return 是否成功
      */
-    public String login_Ctl(String ctr_id, String ctr_password) {
+    public String administratorLogin(String ctr_id, String ctr_password) {
         if (ctr_id==null||ctr_password==null){
             return "用户名或密码为空";
         }
-        Administrators controller=administratorsDao.find_Adm(ctr_id);
+        Administrators controller=administratorsDao.findAdm(ctr_id);
         if (controller==null){
             return "用户未注册";
         }

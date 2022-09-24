@@ -10,6 +10,4 @@ public class Administrators {
     private String ctr_id;             //管理员账号
     private String ctr_password;       //管理员密码
 
-
-
 }

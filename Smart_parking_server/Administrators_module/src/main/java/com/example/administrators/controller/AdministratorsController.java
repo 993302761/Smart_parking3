@@ -28,8 +28,8 @@ public class AdministratorsController {
             @ApiImplicitParam(name = "ctr_id", value = "超级管理员账号", required = true, dataType = "String")
     })
     @GetMapping(value = "/controller_login/{ctr_id}/{ctr_password}", produces = "text/plain;charset=utf-8")
-    public String controller_login(@PathVariable String ctr_id,@PathVariable  String ctr_password){
-        return administratorsService.login_Ctl(ctr_id,ctr_password);
+    public String  administratorLogin (@PathVariable String ctr_id,@PathVariable  String ctr_password){
+        return administratorsService.administratorLogin(ctr_id,ctr_password);
     }
 
 

@@ -12,6 +12,6 @@ public interface AdministratorsDao {
      * */
 
     @Select("SELECT ctr_id,ctr_password FROM Administrators WHERE ctr_id =#{ctr_id}")
-    Administrators find_Adm(@Param("ctr_id") String ctr_id);
+    Administrators findAdm(@Param("ctr_id") String ctr_id);
 
 }
