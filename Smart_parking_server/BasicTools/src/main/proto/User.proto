@@ -18,6 +18,7 @@ import "google/protobuf/empty.proto";
 // 对外提供的接口
 service UserService {
   // rpc 方法名( 参数类型，..... ) returns(返回响应类)  {}  google.protobuf.Empty为空
+  // stream关键字代表流式处理
   rpc getAllUsers (google.protobuf.Empty) returns (userListResponse) {}
 
 }

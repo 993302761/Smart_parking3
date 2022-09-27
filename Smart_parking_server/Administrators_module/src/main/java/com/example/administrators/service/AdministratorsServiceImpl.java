@@ -2,30 +2,26 @@ package com.example.administrators.service;
 
 import com.example.administrators.dao.AdministratorsDao;
 import com.example.administrators.entity.Administrators;
+
+import net.devh.boot.grpc.server.service.GrpcService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;
+import java.util.List;
 
 @Service
-
-public class AdministratorsServiceImpl {
+public class AdministratorsServiceImpl  {
 
     @Resource
     private AdministratorsDao administratorsDao;
 
-    @Resource
-    private UserFeignService userFeignService;
 
-    @Resource
-    private ParkingLotFeignService parkingLotFeignService;
-
-    @Resource
-    private OrderFeignService orderFeignService;
 
 
     private static final Logger LOGGER= LoggerFactory.getLogger(AdministratorsServiceImpl.class);
+
 
 
     /**
@@ -57,7 +53,8 @@ public class AdministratorsServiceImpl {
      */
 
     public Object getAllUsers() {
-        return userFeignService.getAllUsers();
+//        return userFeignService.getAllUsers();
+        return null;
     }
 
 
@@ -66,7 +63,8 @@ public class AdministratorsServiceImpl {
      * @return 获取停车场列表
      */
     public Object getAllParking() {
-        return parkingLotFeignService.getAllParking();
+//        return parkingLotFeignService.getAllParking();
+        return null;
     }
 
 
@@ -75,7 +73,8 @@ public class AdministratorsServiceImpl {
      * @return 获取订单列表
      */
     public Object getAllOrder() {
-        return orderFeignService.getAllOrders();
+//        return orderFeignService.getAllOrders();
+        return null;
     }
 
 
@@ -89,7 +88,8 @@ public class AdministratorsServiceImpl {
      * @return 是否成功
      */
     public String updateParking(String pctr_id, String parking_lot_name, String parking_in_the_city, Integer parking_spaces_num, float billing_rules) {
-        return parkingLotFeignService.updateParking(pctr_id, parking_lot_name, parking_in_the_city, parking_spaces_num, billing_rules);
+//        return parkingLotFeignService.updateParking(pctr_id, parking_lot_name, parking_in_the_city, parking_spaces_num, billing_rules);
+        return null;
     }
 
 
@@ -100,6 +100,10 @@ public class AdministratorsServiceImpl {
      * @return 是否成功
      */
     public String cancelOrder( String order_number) {
-        return orderFeignService.cancelOrder(order_number);
+//        return orderFeignService.cancelOrder(order_number);
+        return null;
     }
+
+
+
 }

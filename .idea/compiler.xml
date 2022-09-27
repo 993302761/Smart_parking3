@@ -7,6 +7,13 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="ParkingLot_module" />
+        <module name="Order_module" />
+        <module name="Administrators_module" />
+        <module name="Integral_module" />
+        <module name="BasicTools" />
+        <module name="Vehicle_module" />
+        <module name="User_module" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -17,10 +24,11 @@
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="Administrators_module" options="" />
       <module name="BasicTools" options="" />
+      <module name="FastDFS" options="-parameters" />
       <module name="Integral_module" options="" />
       <module name="Order_module" options="" />
       <module name="ParkingLot_module" options="" />
-      <module name="Smart_parking_server" options="-parameters" />
+      <module name="Smart_parking_server" options="" />
       <module name="User_module" options="" />
       <module name="Vehicle_module" options="" />
       <module name="demo" options="-parameters" />

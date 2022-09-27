@@ -28,4 +28,10 @@ logging:
     com.example.administrators: info
   config: classpath:log4j2.xml
 
-
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+        #include：refresh ,health ,info #打开部分
+        # spring boot 2.x 默认只开启了info 和 health ，*代表开启全部访问

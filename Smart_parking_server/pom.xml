@@ -23,6 +23,13 @@
 
     </modules>
 
+    <pluginRepositories>
+        <pluginRepository>
+            <id>aliyun</id>
+            <name>aliyun</name>
+            <url>https://maven.aliyun.com/repository/central</url>
+        </pluginRepository>
+    </pluginRepositories>
     <dependencies>
 
         <dependency>
@@ -69,18 +76,24 @@
             <artifactId>lombok</artifactId>
         </dependency>
 
-        <!-- grpc底层通信组件-->
+        <!-- grpc底层通信组件  有问题-->
         <dependency>
             <groupId>io.grpc</groupId>
-            <artifactId>grpc-netty-shaded</artifactId>
+            <artifactId>grpc-netty</artifactId>
             <version>1.42.0</version>
         </dependency>
+<!--        <dependency>-->
+<!--            <groupId>io.grpc</groupId>-->
+<!--            <artifactId>grpc-all</artifactId>-->
+<!--            <version>1.42.0</version>-->
+<!--        </dependency>-->
         <!-- grpc对protobuf的支持工具包-->
         <dependency>
             <groupId>io.grpc</groupId>
             <artifactId>grpc-protobuf</artifactId>
             <version>1.42.0</version>
         </dependency>
+
         <!-- grpc通过这个依赖进行存根-->
         <dependency>
             <groupId>io.grpc</groupId>
@@ -93,6 +106,12 @@
             <artifactId>annotations-api</artifactId>
             <version>6.0.53</version>
         </dependency>
+        <!-- spring boot 集成的grpc包-->
+        <dependency>
+            <groupId>net.devh</groupId>
+            <artifactId>grpc-spring-boot-starter</artifactId>
+            <version>2.13.0.RELEASE</version>
+        </dependency>
 
     </dependencies>
 
@@ -101,6 +120,7 @@
         <maven.compiler.source>8</maven.compiler.source>
         <maven.compiler.target>8</maven.compiler.target>
     </properties>
+
 
     <build>
         <plugins>
@@ -147,5 +167,6 @@
         </extensions>
 
     </build>
+
 
 </project>

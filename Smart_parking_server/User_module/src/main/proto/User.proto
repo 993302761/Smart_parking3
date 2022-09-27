@@ -1,0 +1,50 @@
+//在proto文件中定义了有哪些对外接口，以及这个方法的入参和回参。
+
+//使用proto3语法
+syntax = "proto3";
+
+//不要拆分成多个类
+option java_multiple_files = false;
+//生成java类所在的包
+option java_package = "org.example.proto.user";
+//生成外层类的类名
+option java_outer_classname = "UserProto";
+
+//逻辑包名
+package User;
+
+import "google/protobuf/empty.proto";
+
+// 对外提供的接口
+service UserService {
+  // rpc 方法名( 参数类型，..... ) returns(返回响应类)  {}  google.protobuf.Empty为空
+  // stream关键字代表流式处理
+  rpc getAllUsers (google.protobuf.Empty) returns (userListResponse) {}
+
+}
+
+
+/**
+  消息是gRPC描述信息的基本单位，类似Java的实体类
+  消息的名字对应生成代码后的类名
+  每个消息对应一个类
+ */
+message userListResponse {
+  /**
+  字段： 类型  名称  =  索引值（id
+  每个字段都要定义唯一索引值
+  不可使用19000-19999之间的标识号，protobuf协议对其进行了预留
+  repeated代表集合（数组）的关键字
+   */
+  repeated userResponse userList=1;
+}
+
+
+message userResponse{
+
+  string user_name=10;  //用户名
+  string user_id=20;  //身份证号
+  repeated string Vehicle=30; //所绑定的车辆信息
+}
+
+

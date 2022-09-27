@@ -4,7 +4,12 @@ package com.example.user.serviceImpl;
 import com.example.user.dao.UserDao;
 import com.example.user.entity.User_information;
 
+import com.example.user.proto.UserProto;
+import com.example.user.proto.UserServiceGrpc;
+import com.google.protobuf.Empty;
 import com.saltfish.example.demo.VehicleFileDao;
+import io.grpc.stub.StreamObserver;
+import net.devh.boot.grpc.server.service.GrpcService;
 import org.example.entity.parkingLots.Parking_for_user;
 import org.example.entity.user.User;
 import org.springframework.context.annotation.Import;
@@ -22,11 +27,12 @@ import java.util.concurrent.TimeUnit;
 
 
 @Service
+@GrpcService
 @Import({
         com.saltfish.example.demo.VehicleFileDao.class,
         com.saltfish.example.aseptcut.UploadAsept.class
 })
-public class UserServiceImpl  {
+public class UserServiceImpl  extends UserServiceGrpc.UserServiceImplBase {
 
     @Resource
     private UserDao userDao;
@@ -37,14 +43,9 @@ public class UserServiceImpl  {
 
 
     @Resource
-    private VehicleFeignService vehicleFeignService;
-
-
-    @Resource
     private RedisTemplate redisTemplate;
 
-    @Resource
-    private ParkingLotFeignService parkingLotFeignService;
+
 
 
 
@@ -129,32 +130,33 @@ public class UserServiceImpl  {
                                    MultipartFile registration,
                                    MultipartFile driving_permit){
 
-        int vehicleNumber = vehicleFeignService.check_license_plate_number(user_name, license_plate_number);
-        if (vehicleNumber==1){
-            return "该车辆已注册，请勿重复注册";
-        }else if (vehicleNumber>1){
-            return "数据错误";
-        }else if (vehicleNumber<0){
-            return "访问错误";
-        }
-
-        String vehicle_photos_address = vehicleFileDao.addVehicleFile(vehicle_photos);
-        String registration_address = vehicleFileDao.addVehicleFile(registration);
-        String driving_permit_address = vehicleFileDao.addVehicleFile(driving_permit);
-        if (vehicle_photos_address==null||registration_address==null||driving_permit_address==null){
-            return "照片保存错误";
-        }
-        try {
-
-            String s = vehicleFeignService.vehicle_binding(user_name, user_id, license_plate_number, vehicle_photos_address.replace('/', '&'), registration_address.replace('/', '&'), driving_permit_address.replace('/', '&'));
-            return s;
-        }catch (Exception e){
-            vehicleFileDao.deleteVehicleFile(vehicle_photos_address.replace('/','&'));
-            vehicleFileDao.deleteVehicleFile(registration_address.replace('/','&'));
-            vehicleFileDao.deleteVehicleFile(driving_permit_address.replace('/','&'));
-            e.printStackTrace();
-            return "绑定信息失败";
-        }
+//        int vehicleNumber = vehicleFeignService.check_license_plate_number(user_name, license_plate_number);
+//        if (vehicleNumber==1){
+//            return "该车辆已注册，请勿重复注册";
+//        }else if (vehicleNumber>1){
+//            return "数据错误";
+//        }else if (vehicleNumber<0){
+//            return "访问错误";
+//        }
+//
+//        String vehicle_photos_address = vehicleFileDao.addVehicleFile(vehicle_photos);
+//        String registration_address = vehicleFileDao.addVehicleFile(registration);
+//        String driving_permit_address = vehicleFileDao.addVehicleFile(driving_permit);
+//        if (vehicle_photos_address==null||registration_address==null||driving_permit_address==null){
+//            return "照片保存错误";
+//        }
+//        try {
+//
+//            String s = vehicleFeignService.vehicle_binding(user_name, user_id, license_plate_number, vehicle_photos_address.replace('/', '&'), registration_address.replace('/', '&'), driving_permit_address.replace('/', '&'));
+//            return s;
+//        }catch (Exception e){
+//            vehicleFileDao.deleteVehicleFile(vehicle_photos_address.replace('/','&'));
+//            vehicleFileDao.deleteVehicleFile(registration_address.replace('/','&'));
+//            vehicleFileDao.deleteVehicleFile(driving_permit_address.replace('/','&'));
+//            e.printStackTrace();
+//            return "绑定信息失败";
+//        }
+        return null;
     }
 
 
@@ -168,7 +170,8 @@ public class UserServiceImpl  {
      * @return 是否成功
      */
     public String deleteVehicle (String user_name, String license_plate_number){
-        return vehicleFeignService.deleteVehicle(user_name,license_plate_number);
+//        return vehicleFeignService.deleteVehicle(user_name,license_plate_number);
+        return null;
     }
 
 
@@ -181,7 +184,8 @@ public class UserServiceImpl  {
      * @return 是否成功
      */
     public List<String> getUserVehicle (String user_name){
-        return vehicleFeignService.getUserVehicle(user_name);
+//        return vehicleFeignService.getUserVehicle(user_name);
+        return null;
     }
 
 
@@ -243,7 +247,8 @@ public class UserServiceImpl  {
      * @param city 当前所在城市
      */
     public Object getParkingLot (String parking_lot_name,String city){
-        return parkingLotFeignService.getParkingLot(parking_lot_name,city);
+//        return parkingLotFeignService.getParkingLot(parking_lot_name,city);
+        return null;
     }
 
 
@@ -341,15 +346,16 @@ public class UserServiceImpl  {
      * @return 用户列表
      */
     public List<User> getAllUsers() {
-        List<User> users = userDao.getAllUsers();
-        List<User> newUsers=new ArrayList<>();
-        for (int i = 0; i < users.size(); i++) {
-            List<String> vehicle=vehicleFeignService.getUserVehicle(users.get(i).getUser_name());
-            User t=users.get(i);
-            t.setVehicle(vehicle);
-            newUsers.add(t);
-        }
-        return newUsers;
+//        List<User> users = userDao.getAllUsers();
+//        List<User> newUsers=new ArrayList<>();
+//        for (int i = 0; i < users.size(); i++) {
+//            List<String> vehicle=vehicleFeignService.getUserVehicle(users.get(i).getUser_name());
+//            User t=users.get(i);
+//            t.setVehicle(vehicle);
+//            newUsers.add(t);
+//        }
+//        return newUsers;
+        return null;
     }
 
 
@@ -360,10 +366,11 @@ public class UserServiceImpl  {
      * TODO：删除用户
      */
     public String delete_User (String user_name,String UUID){
-        userDao.delete_User(user_name);
-        String key=md5(user_name+UUID);
-        redisTemplate.delete(key);
-        return vehicleFeignService.deleteAllVehicle(user_name);
+//        userDao.delete_User(user_name);
+//        String key=md5(user_name+UUID);
+//        redisTemplate.delete(key);
+//        return vehicleFeignService.deleteAllVehicle(user_name);
+        return null;
     }
 
 
@@ -377,8 +384,27 @@ public class UserServiceImpl  {
      * @return 停车场列表
      */
     public List<Parking_for_user> peripheralParking(String latitude, String longitude, String city) {
-        return parkingLotFeignService.peripheralParking(latitude, longitude, city);
+//        return parkingLotFeignService.peripheralParking(latitude, longitude, city);
+        return null;
     }
 
 
+    @Override
+    public void getAllUsers(Empty request, StreamObserver<UserProto.userListResponse> responseObserver) {
+        List<User> allUsers = getAllUsers();
+        UserProto.userResponse.Builder builder=UserProto.userResponse.newBuilder();
+        List<UserProto.userResponse> userList=new ArrayList<>();
+        for (int i = 0; i < allUsers.size(); i++) {
+            builder.clear();
+            builder.setUserName(allUsers.get(i).getUser_name())
+                    .setUserId(allUsers.get(i).getUser_id());
+            List<String> vehicle = allUsers.get(i).getVehicle();
+            for (int j = 0; j < vehicle.size(); j++) {
+                builder.setVehicle(j,vehicle.get(j));
+            }
+            userList.add(builder.build());
+        }
+        UserProto.userListResponse response = UserProto.userListResponse.newBuilder().setUserList(allUsers.size(),builder).build();
+
+    }
 }
