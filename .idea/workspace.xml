@@ -5,30 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5165a8d4-14ee-4222-9aca-054a42b0ef5a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Smart_parking_server/User_module/src/main/java/com/example/user/proto/UserProto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Smart_parking_server/User_module/src/main/java/com/example/user/proto/UserServiceGrpc.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Smart_parking_server/Administrators_module/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Smart_parking_server/Administrators_module/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Smart_parking_server/Administrators_module/src/main/java/com/example/administrators/service/AdministratorsServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/Smart_parking_server/Administrators_module/src/main/java/com/example/administrators/service/AdministratorsServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Smart_parking_server/Administrators_module/src/main/proto/Integral.proto" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Smart_parking_server/Administrators_module/src/main/proto/Order.proto" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Smart_parking_server/Administrators_module/src/main/proto/ParkingLot.proto" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Smart_parking_server/Administrators_module/src/main/proto/User.proto" beforeDir="false" afterPath="$PROJECT_DIR$/Smart_parking_server/User_module/src/main/proto/User.proto" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Smart_parking_server/Administrators_module/src/main/proto/Vehicle.proto" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Smart_parking_server/Administrators_module/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/Smart_parking_server/Administrators_module/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Smart_parking_server/BasicTools/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Smart_parking_server/BasicTools/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Smart_parking_server/BasicTools/src/main/proto/Integral.proto" beforeDir="false" afterPath="$PROJECT_DIR$/Smart_parking_server/BasicTools/src/main/proto/Integral.proto" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Smart_parking_server/BasicTools/src/main/proto/Order.proto" beforeDir="false" afterPath="$PROJECT_DIR$/Smart_parking_server/BasicTools/src/main/proto/Order.proto" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Smart_parking_server/BasicTools/src/main/proto/ParkingLot.proto" beforeDir="false" afterPath="$PROJECT_DIR$/Smart_parking_server/BasicTools/src/main/proto/ParkingLot.proto" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Smart_parking_server/BasicTools/src/main/proto/User.proto" beforeDir="false" afterPath="$PROJECT_DIR$/Smart_parking_server/BasicTools/src/main/proto/User.proto" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Smart_parking_server/BasicTools/src/main/proto/Vehicle.proto" beforeDir="false" afterPath="$PROJECT_DIR$/Smart_parking_server/BasicTools/src/main/proto/Vehicle.proto" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Smart_parking_server/Integral_module/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Smart_parking_server/Integral_module/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Smart_parking_server/Order_module/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Smart_parking_server/Order_module/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Smart_parking_server/ParkingLot_module/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Smart_parking_server/ParkingLot_module/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Smart_parking_server/User_module/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Smart_parking_server/User_module/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Smart_parking_server/User_module/src/main/java/com/example/user/serviceImpl/UserOrderServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/Smart_parking_server/User_module/src/main/java/com/example/user/serviceImpl/UserOrderServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Smart_parking_server/User_module/src/main/java/com/example/user/serviceImpl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/Smart_parking_server/User_module/src/main/java/com/example/user/serviceImpl/UserServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Smart_parking_server/User_module/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/Smart_parking_server/User_module/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Smart_parking_server/Vehicle_module/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Smart_parking_server/Vehicle_module/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Smart_parking_server/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Smart_parking_server/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
@@ -190,7 +167,8 @@
       <workItem from="1664034005179" duration="12000" />
       <workItem from="1664088324310" duration="82000" />
       <workItem from="1664153983016" duration="1232000" />
-      <workItem from="1664241764916" duration="12528000" />
+      <workItem from="1664241764916" duration="13844000" />
+      <workItem from="1664324338580" duration="2890000" />
     </task>
     <servers />
   </component>

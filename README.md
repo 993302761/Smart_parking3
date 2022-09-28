@@ -1,5 +1,7 @@
 # Smart_parking 3
-智慧停车3
+
+
+[![OSCS Status](https://www.oscs1024.com/platform/badge/993302761/Smart_parking3.git.svg?size=small)](https://www.murphysec.com/dr/Vug67icuIV2V3f1kLh)
 
 ##  	`   Brief introduction   `
 
@@ -9,6 +11,9 @@
 
 * The image recognition technology is used to identify the license plate number, and the user's integrity is determined by recording the parking space and identifying the license plate number. Based on the above data, the parking of target visitors is planned to promote the balance of urban parking space utilization.  
 
+## `OSCS`
+
+[![OSCS Status](https://www.oscs1024.com/platform/badge/993302761/Smart_parking3.git.svg?size=large)](https://www.murphysec.com/dr/QvNlLNJwnKraV7ZYk5)
 
 ##  `	 Market environment analysis    `
 

@@ -14,12 +14,12 @@
   <packaging>pom</packaging>
 
 
-<!--  <parent>-->
-<!--    <groupId>org.springframework.boot</groupId>-->
-<!--    <artifactId>spring-boot-starter-parent</artifactId>-->
-<!--    <version>2.3.12.RELEASE</version>-->
-<!--    <relativePath/> &lt;!&ndash; lookup parent from repository &ndash;&gt;-->
-<!--  </parent>-->
+  <parent>
+    <groupId>org.springframework.boot</groupId>
+    <artifactId>spring-boot-starter-parent</artifactId>
+    <version>2.3.12.RELEASE</version>
+    <relativePath/> <!-- lookup parent from repository -->
+  </parent>
 
 
 <!--统一管理jar包版本-->
@@ -30,6 +30,7 @@
     <junit.version>4.13.2</junit.version>
     <log4j.version>1.2.17</log4j.version>
     <lombok.version>1.16.18</lombok.version>
+    <dubbo.version>2.7.8</dubbo.version>
   </properties>
 
 <!--dependencyManagement只有最顶点的父工程才使用
@@ -60,7 +61,14 @@
         <type>pom</type>
         <scope>import</scope>
       </dependency>
-
+      <!-- Apache Dubbo  -->
+      <dependency>
+        <groupId>org.apache.dubbo</groupId>
+        <artifactId>dubbo-dependencies-bom</artifactId>
+        <version>${dubbo.version}</version>
+        <type>pom</type>
+        <scope>import</scope>
+      </dependency>
 
     </dependencies>
   </dependencyManagement>
