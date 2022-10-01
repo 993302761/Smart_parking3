@@ -37,6 +37,12 @@
             <artifactId>commons-lang3</artifactId>
         </dependency>
 
+        <!--    nacos客户端依赖包     -->
+        <dependency>
+            <groupId>com.alibaba.cloud</groupId>
+            <artifactId>spring-cloud-starter-alibaba-nacos-discovery</artifactId>
+        </dependency>
+
         <!--MySql-->
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -78,11 +84,11 @@
 
 
         <!-- Dubbo Spring Boot Starter -->
-        <dependency>
-            <groupId>org.apache.dubbo</groupId>
-            <artifactId>dubbo-spring-boot-starter</artifactId>
-            <version>2.7.8</version>
-        </dependency>
+<!--        <dependency>-->
+<!--            <groupId>org.apache.dubbo</groupId>-->
+<!--            <artifactId>dubbo-spring-boot-starter</artifactId>-->
+<!--            <version>2.7.8</version>-->
+<!--        </dependency>-->
 
         <!-- grpc底层通信组件  有问题-->
         <dependency>

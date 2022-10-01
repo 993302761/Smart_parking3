@@ -5,7 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5165a8d4-14ee-4222-9aca-054a42b0ef5a" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/NacosScript/nacos_start.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/NacosScript/nacos_stop.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ProjectSetUp/版本组件关系.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Smart_parking_server/Administrators_module/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/Smart_parking_server/Administrators_module/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Smart_parking_server/Administrators_module/src/main/resources/log4j2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Smart_parking_server/User_module/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/Smart_parking_server/User_module/src/main/resources/application.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Smart_parking_server/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Smart_parking_server/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
@@ -78,7 +83,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="jdk.selected.JAVA_MODULE" value="1.8" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/Smart_parking_server/User_module/src/main/java/com/example/user/proto" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/ProjectSetUp" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
@@ -90,13 +95,14 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/ProjectSetUp" />
       <recent name="$PROJECT_DIR$/Smart_parking_server/User_module/src/main/java/com/example/user/proto" />
       <recent name="$PROJECT_DIR$/Smart_parking_server/User_module/src/main" />
       <recent name="$PROJECT_DIR$/Smart_parking_server/User_module/src/main/java/com/example/user" />
       <recent name="$PROJECT_DIR$/Smart_parking_server/Administrators_module/src/main/java/com/example/administrators/proto" />
-      <recent name="$PROJECT_DIR$/Smart_parking_server/BasicTools/src/main" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/NacosScript" />
       <recent name="$PROJECT_DIR$/Smart_parking_server/BasicTools/src/main/java" />
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/Smart_parking_server" />
@@ -113,7 +119,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.UserApplication">
+  <component name="RunManager" selected="Spring Boot.AdministratorsApplication">
     <configuration name="AdministratorsApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="Administrators_module" />
       <extension name="coverage">
@@ -123,6 +129,13 @@
         </pattern>
       </extension>
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.administrators.AdministratorsApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="NacosServerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="NacosServer" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.nacosserver.NacosServerApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -142,8 +155,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Spring Boot.UserApplication" />
         <item itemvalue="Spring Boot.AdministratorsApplication" />
+        <item itemvalue="Spring Boot.UserApplication" />
       </list>
     </recent_temporary>
   </component>
@@ -168,7 +181,9 @@
       <workItem from="1664088324310" duration="82000" />
       <workItem from="1664153983016" duration="1232000" />
       <workItem from="1664241764916" duration="13844000" />
-      <workItem from="1664324338580" duration="2890000" />
+      <workItem from="1664324338580" duration="6118000" />
+      <workItem from="1664523627124" duration="8000" />
+      <workItem from="1664523820033" duration="6448000" />
     </task>
     <servers />
   </component>
