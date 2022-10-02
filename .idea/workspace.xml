@@ -5,12 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5165a8d4-14ee-4222-9aca-054a42b0ef5a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/NacosScript/nacos_start.sh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/NacosScript/nacos_stop.sh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ProjectSetUp/版本组件关系.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GateWayServer/GateWay_APP/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GateWayServer/GateWay_APP/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GateWayServer/GateWay_Web/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GateWayServer/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Smart_parking_server/Administrators_module/src/main/java/explme/GateWayUserApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Smart_parking_server/Administrators_module/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/Smart_parking_server/Administrators_module/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Smart_parking_server/Administrators_module/src/main/resources/log4j2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Smart_parking_server/User_module/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/Smart_parking_server/User_module/src/main/resources/application.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Smart_parking_server/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Smart_parking_server/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
@@ -83,7 +84,11 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="jdk.selected.JAVA_MODULE" value="1.8" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/ProjectSetUp" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/GateWayServer/GateWay_APP/src/main/resources" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
@@ -95,19 +100,21 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/GateWayServer/GateWay_APP/src/main/resources" />
       <recent name="$PROJECT_DIR$/ProjectSetUp" />
       <recent name="$PROJECT_DIR$/Smart_parking_server/User_module/src/main/java/com/example/user/proto" />
       <recent name="$PROJECT_DIR$/Smart_parking_server/User_module/src/main" />
       <recent name="$PROJECT_DIR$/Smart_parking_server/User_module/src/main/java/com/example/user" />
-      <recent name="$PROJECT_DIR$/Smart_parking_server/Administrators_module/src/main/java/com/example/administrators/proto" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/GateWayServer" />
+      <recent name="$PROJECT_DIR$/GateWay_APP" />
       <recent name="$PROJECT_DIR$/NacosScript" />
       <recent name="$PROJECT_DIR$/Smart_parking_server/BasicTools/src/main/java" />
       <recent name="$PROJECT_DIR$" />
-      <recent name="$PROJECT_DIR$/Smart_parking_server" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="explme" />
       <recent name="com.example.administrators.proto" />
     </key>
   </component>
@@ -119,7 +126,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.AdministratorsApplication">
+  <component name="RunManager" selected="Spring Boot.GateWayWebApplication">
     <configuration name="AdministratorsApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="Administrators_module" />
       <extension name="coverage">
@@ -133,9 +140,28 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="NacosServerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
-      <module name="NacosServer" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.nacosserver.NacosServerApplication" />
+    <configuration name="GateWayUserApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="GateWay_APP" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.app.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.app.GateWayUserApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GateWayWebApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="GateWay_Web" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.web.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.web.GateWayWebApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -155,6 +181,8 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Spring Boot.GateWayWebApplication" />
+        <item itemvalue="Spring Boot.GateWayUserApplication" />
         <item itemvalue="Spring Boot.AdministratorsApplication" />
         <item itemvalue="Spring Boot.UserApplication" />
       </list>
@@ -184,6 +212,7 @@
       <workItem from="1664324338580" duration="6118000" />
       <workItem from="1664523627124" duration="8000" />
       <workItem from="1664523820033" duration="6448000" />
+      <workItem from="1664675008599" duration="3155000" />
     </task>
     <servers />
   </component>

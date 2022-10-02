@@ -3,6 +3,11 @@
   <component name="Encoding" native2AsciiForPropertiesFiles="true" defaultCharsetForPropertiesFiles="UTF-8">
     <file url="file://$PROJECT_DIR$/FastDFS/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/FastDFS/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/GateWayServer/GateWay_APP/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/GateWayServer/GateWay_Web/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/GateWayServer/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/GateWayServer/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/GateWay_Web/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/NacosServer/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/Smart_parking_server/Administrators_module/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/Smart_parking_server/Administrators_module/src/main/resources" charset="UTF-8" />

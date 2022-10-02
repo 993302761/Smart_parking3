@@ -26,3 +26,19 @@
 * Based on wireless communication, GIS, GPS and other technologies, it can realize functions such as intelligent parking space recommendation, map guidance for car owners to park, real-time management to view the distribution of urban parking spaces, which saves the labor cost of the current traditional parking industry, and solves the problem of urban parking to a certain extent.
 
 * This project is in response to the Several Opinions of the CPC Central Committee and the State Council on Further Strengthening the Management of Urban Planning and Construction and the Provisions on Economical and Intensive Use of Land and other documents, to achieve reasonable allocation of parking facilities, improve space utilization efficiency and promote the economical and intensive use of land; Make full use of the ground and underground space, and promote the multi-functional three-dimensional development and composite utilization of construction land; Encourage the participation of social capital, accelerate the construction of urban parking, and gradually alleviate the parking problem.
+
+
+
+##  `	 Operating environment   `
+
+
+|   Name   |     Version     |
+|:--------:|:---------------:|
+|   JDK    |       1.8       |
+| FastDFS  |      5.05       |
+|  Redis   |      6.2.5      |
+|  Erlang  |      24.3       |
+| RabbitMQ |     3.10.7      |
+
+
+
