@@ -6,10 +6,12 @@
   <component name="ChangeListManager">
     <list default="true" id="5165a8d4-14ee-4222-9aca-054a42b0ef5a" name="Changes" comment="">
       <change afterPath="$PROJECT_DIR$/GateWayServer/GateWay_APP/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GateWayServer/GateWay_APP/src/main/java/com/example/app/GateWayUserApplication.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/GateWayServer/GateWay_APP/src/main/resources/application.yml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/GateWayServer/GateWay_Web/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GateWayServer/GateWay_Web/src/main/java/com/example/web/GateWayWebApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GateWayServer/GateWay_Web/src/main/resources/application.yml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/GateWayServer/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Smart_parking_server/Administrators_module/src/main/java/explme/GateWayUserApplication.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Smart_parking_server/Administrators_module/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/Smart_parking_server/Administrators_module/src/main/resources/application.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Smart_parking_server/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Smart_parking_server/pom.xml" afterDir="false" />
@@ -84,7 +86,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="jdk.selected.JAVA_MODULE" value="1.8" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/GateWayServer/GateWay_APP/src/main/resources" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/GateWayServer/GateWay_Web/src/main/resources" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -100,11 +102,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/GateWayServer/GateWay_Web/src/main/resources" />
       <recent name="$PROJECT_DIR$/GateWayServer/GateWay_APP/src/main/resources" />
       <recent name="$PROJECT_DIR$/ProjectSetUp" />
       <recent name="$PROJECT_DIR$/Smart_parking_server/User_module/src/main/java/com/example/user/proto" />
       <recent name="$PROJECT_DIR$/Smart_parking_server/User_module/src/main" />
-      <recent name="$PROJECT_DIR$/Smart_parking_server/User_module/src/main/java/com/example/user" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/GateWayServer" />
@@ -212,7 +214,7 @@
       <workItem from="1664324338580" duration="6118000" />
       <workItem from="1664523627124" duration="8000" />
       <workItem from="1664523820033" duration="6448000" />
-      <workItem from="1664675008599" duration="3155000" />
+      <workItem from="1664675008599" duration="3507000" />
     </task>
     <servers />
   </component>

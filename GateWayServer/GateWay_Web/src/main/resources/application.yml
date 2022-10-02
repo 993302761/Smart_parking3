@@ -1,10 +1,16 @@
 server:
-  port: 8502
+  port: 9502
 
 spring:
+
   application:
     name: gatewayForWeb
+
   cloud:
+    nacos:
+      #nacos服务地址
+      server-addr: localhost:8848
+
     gateway:
       discovery:
         locator:
