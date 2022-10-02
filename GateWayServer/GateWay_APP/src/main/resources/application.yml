@@ -8,9 +8,13 @@ spring:
 
   cloud:
     nacos:
-      #nacos服务地址
-      server-addr: localhost:8848
-
+      server-addr: localhost:8848      #nacos服务地址
+      #配置集群名称，可实现实例的集群属性配置
+      #服务间调用默认使用轮训，优先使用相同集群的服务，若不可用，再找其他的
+      discovery:
+        cluster-name: ServerMaster
+        ephemeral: false    #设置为非临时实例
+    #        namespace:    #填写命名空间id，用于做环境隔离
 
     gateway:
       discovery:

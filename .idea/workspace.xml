@@ -5,13 +5,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5165a8d4-14ee-4222-9aca-054a42b0ef5a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Smart_parking_server/Administrators_module/src/main/java/com/example/administrators/config/RibbonRule.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Smart_parking_server/Administrators_module/src/main/java/com/example/administrators/config/RibbonRule.java" beforeDir="false" afterPath="$PROJECT_DIR$/Smart_parking_server/Administrators_module/src/main/java/com/example/administrators/config/RibbonRule.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Smart_parking_server/Administrators_module/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/Smart_parking_server/Administrators_module/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Smart_parking_server/Administrators_module/src/main/resources/bootstrap.yml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Smart_parking_server/Administrators_module/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/Smart_parking_server/Administrators_module/target/classes/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Smart_parking_server/Integral_module/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/Smart_parking_server/Integral_module/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Smart_parking_server/Integral_module/src/main/resources/bootstrap.yml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Smart_parking_server/Order_module/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/Smart_parking_server/Order_module/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Smart_parking_server/Order_module/src/main/resources/bootstrap.yml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Smart_parking_server/ParkingLot_module/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/Smart_parking_server/ParkingLot_module/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Smart_parking_server/ParkingLot_module/src/main/resources/bootstrap.yml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Smart_parking_server/User_module/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/Smart_parking_server/User_module/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Smart_parking_server/User_module/src/main/resources/bootstrap.yml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Smart_parking_server/Vehicle_module/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/Smart_parking_server/Vehicle_module/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Smart_parking_server/Vehicle_module/src/main/resources/bootstrap.yml" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -217,7 +224,7 @@
       <workItem from="1664324338580" duration="6118000" />
       <workItem from="1664523627124" duration="8000" />
       <workItem from="1664523820033" duration="6448000" />
-      <workItem from="1664675008599" duration="9603000" />
+      <workItem from="1664675008599" duration="12303000" />
     </task>
     <servers />
   </component>

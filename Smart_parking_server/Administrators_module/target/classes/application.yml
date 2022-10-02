@@ -23,22 +23,18 @@ spring:
         prefetch: 1   #每次只能获取一条消息，处理完才能获取下一条（提升消息处理速度，避免消息堆积）
 
 
-#management:
-#  endpoints:
-#    web:
-#      exposure:
-#        include: "*"
-#        #include：refresh ,health ,info #打开部分
-#        # spring boot 2.x 默认只开启了info 和 health ，*代表开启全部访问
-
+#  nacos临时实例采用心跳机制（有问题则剔除），非临时实例则nacos主动询问（标记不健康，等待恢复）
+# eureka消费者使用pull拉取服务，nacos消费者使用pull+push，若有服务出问题则主动向消费者推送新的列表
   cloud:
     nacos:
-      #nacos服务地址
-      server-addr: localhost:8848
+      server-addr: localhost:8848      #nacos服务地址
       #配置集群名称，可实现实例的集群属性配置
       #服务间调用默认使用轮训，优先使用相同集群的服务，若不可用，再找其他的
       discovery:
         cluster-name: ServerMaster
+        ephemeral: false    #设置为非临时实例
+#        namespace:    #填写命名空间id，用于做环境隔离
+
 
 ribbon:
   eager-load:

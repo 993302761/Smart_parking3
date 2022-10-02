@@ -2,9 +2,6 @@ server:
   port: 9001
 
 #spring:
-#  #  服务名称------服务名称不能使用下划线，删除下划线或者使用中划线
-#  application:
-#    name: ClientOrder
 #  jackson:
 #    default-property-inclusion: non_null   #Json处理时忽略null
 
@@ -12,6 +9,7 @@ server:
 spring:
 
   application:
+    #  服务名称------服务名称不能使用下划线，删除下划线或者使用中划线
     name: OrderService
 
   rabbitmq:
@@ -48,77 +46,24 @@ spring:
     driver-class-name: com.mysql.cj.jdbc.Driver
 
 
-#     #是否启用springcloud config bus
-#     bus:
-#       enabled: true
-#  #     trace:
-#    #     enabled: true   #开启跟踪总线事件
-
-#     stream:
-#       kafka:
-#         binder:
-#           #Kafka的消息中间件服务器地址
-#           brokers: localhost:9092
-#           # 是否自动创建主题
-#           auto-create-topics: true
-#           #zookeeper默认地址
-#           zk_nodes: localhost:2181
+  cloud:
+    nacos:
+      server-addr: localhost:8848      #nacos服务地址
+      #配置集群名称，可实现实例的集群属性配置
+      #服务间调用默认使用轮训，优先使用相同集群的服务，若不可用，再找其他的
+      discovery:
+        cluster-name: ServerMaster
+        ephemeral: false    #设置为非临时实例
+#        namespace:    #填写命名空间id，用于做环境隔离
 
 
-
-
-management:
-  endpoints:
-    web:
-      exposure:
-        include: "*"
-        #include：refresh ,health ,info #打开部分
-        # spring boot 2.x 默认只开启了info 和 health ，*代表开启全部访问
-
-
-eureka:
-  client:
-    #      注册到注册中心
-    service-url:
-      defaultZone: http://localhost:8651/eureka/,http://localhost:8652/eureka/
-# # 当输入  http://localhost:9000/actuator/shutdown就会关机
-# management:
-#   endpoints:
-#     web:
-#       exposure:
-#           include: shutdown
-#   endpoint:
-#     shutdown:
-#         enabled: true
-
-
-feign:
-  hystrix:
+ribbon:
+  eager-load:
+    #Ribbon默认采用懒加载，，只有第一次访问时才会去创建LoadBalanceClient，请求时间很长
+    #而饥饿加载则会在项目启动时自动创建，降低第一次访问的耗时
+    #开启饥饿加载
     enabled: true
-  client:
-    config:
-      default:
-        #不设置connectTimeout会导致readTimeout设置不生效
-        #超时时间默认为1s
-        #建立连接所用的时间，适用于网络状况正常的情况下，两端连接所需要的时间
-        connectTimeout: 1500
-        # 指建立连接后从服务端读取到可用资源所用的时间
-        readTimeout: 3000
-        loggerLevel: BASIC  #  设置Fegin的日志级别 共有 NONE BASIC HEADERS FULL
-  httpclient:
-    enabled: true  #开启feign对  httpclient  的支持
-    max-connections: 200      #最大连接数  具体情况需要根据业务调整
-    max-connections-per-route: 50   #每个路径的最大连接数
-
-
-#在30秒内，发生20次以上的请求时，假如错误率达到50%以上，则断路器将被打开。
-hystrix:
-  command:
-    default:  # 或者填写具体的服务名称
-      circuitBreaker:
-        sleepWindowInMilliseconds: 30000
-        #窗口期
-        requestVolumeThreshold: 5
-        #请求阈值
-        errorThresholdPercentage: 60
-        #错误百分比阈值
+    #指定饥饿加载的服务名称
+    clients:
+      - UserService
+      - ParkingLotService
