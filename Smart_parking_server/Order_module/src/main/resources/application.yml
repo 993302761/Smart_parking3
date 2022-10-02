@@ -11,7 +11,8 @@ server:
 
 spring:
 
-  profiles: order
+  application:
+    name: OrderService
 
   rabbitmq:
     host: localhost

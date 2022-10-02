@@ -3,6 +3,9 @@ server:
 
 spring:
 
+  application:
+    name: UserService
+
   datasource:
     url: jdbc:mysql://localhost:3306/Smart_parking_data?useUnicode=true&characterEncoding=UTF-8
     username: root
@@ -32,6 +35,7 @@ spring:
         max-idle: 8 #最大空闲连接，默认
         min-idle: 0 #最小空闲连接，默认
         max-wait: 100ms #连接等待时间
+
 
 grpc:
   server:

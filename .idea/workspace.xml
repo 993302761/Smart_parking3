@@ -5,22 +5,25 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5165a8d4-14ee-4222-9aca-054a42b0ef5a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/GateWayServer/GateWay_APP/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GateWayServer/GateWay_APP/src/main/java/com/example/app/GateWayUserApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GateWayServer/GateWay_APP/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GateWayServer/GateWay_Web/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GateWayServer/GateWay_Web/src/main/java/com/example/web/GateWayWebApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GateWayServer/GateWay_Web/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GateWayServer/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Smart_parking_server/Administrators_module/src/main/java/com/example/administrators/config/RibbonRule.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Smart_parking_server/Administrators_module/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/Smart_parking_server/Administrators_module/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Smart_parking_server/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Smart_parking_server/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Smart_parking_server/Administrators_module/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/Smart_parking_server/Administrators_module/target/classes/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Smart_parking_server/Order_module/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/Smart_parking_server/Order_module/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Smart_parking_server/ParkingLot_module/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/Smart_parking_server/ParkingLot_module/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Smart_parking_server/User_module/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/Smart_parking_server/User_module/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Smart_parking_server/Vehicle_module/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/Smart_parking_server/Vehicle_module/src/main/resources/application.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -183,9 +186,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Spring Boot.AdministratorsApplication" />
         <item itemvalue="Spring Boot.GateWayWebApplication" />
         <item itemvalue="Spring Boot.GateWayUserApplication" />
-        <item itemvalue="Spring Boot.AdministratorsApplication" />
         <item itemvalue="Spring Boot.UserApplication" />
       </list>
     </recent_temporary>
@@ -214,7 +217,7 @@
       <workItem from="1664324338580" duration="6118000" />
       <workItem from="1664523627124" duration="8000" />
       <workItem from="1664523820033" duration="6448000" />
-      <workItem from="1664675008599" duration="3507000" />
+      <workItem from="1664675008599" duration="9603000" />
     </task>
     <servers />
   </component>

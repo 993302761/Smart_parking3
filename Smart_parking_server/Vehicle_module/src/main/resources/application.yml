@@ -4,6 +4,9 @@ server:
 
 spring:
 
+  application:
+    name: VehicleService
+
   datasource:
     url: jdbc:mysql://localhost:3306/Smart_parking_data?useUnicode=true&characterEncoding=UTF-8
     username: root

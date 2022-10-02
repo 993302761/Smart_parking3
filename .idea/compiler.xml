@@ -36,7 +36,7 @@
       <module name="Order_module" options="-parameters" />
       <module name="ParkingLot_module" options="-parameters" />
       <module name="Smart_parking3" options="-parameters" />
-      <module name="Smart_parking_server" options="" />
+      <module name="Smart_parking_server" options="-parameters" />
       <module name="User_module" options="-parameters" />
       <module name="Vehicle_module" options="-parameters" />
       <module name="demo" options="-parameters" />

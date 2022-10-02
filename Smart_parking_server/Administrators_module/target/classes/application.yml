@@ -4,7 +4,7 @@ server:
 
 spring:
   application:
-    name: Administrators
+    name: AdministratorService
 
   datasource:
     url: jdbc:mysql://localhost:3306/Smart_parking_data?useUnicode=true&characterEncoding=UTF-8
@@ -23,9 +23,6 @@ spring:
         prefetch: 1   #每次只能获取一条消息，处理完才能获取下一条（提升消息处理速度，避免消息堆积）
 
 
-
-
-
 #management:
 #  endpoints:
 #    web:
@@ -38,3 +35,19 @@ spring:
     nacos:
       #nacos服务地址
       server-addr: localhost:8848
+      #配置集群名称，可实现实例的集群属性配置
+      #服务间调用默认使用轮训，优先使用相同集群的服务，若不可用，再找其他的
+      discovery:
+        cluster-name: ServerMaster
+
+ribbon:
+  eager-load:
+    #Ribbon默认采用懒加载，，只有第一次访问时才会去创建LoadBalanceClient，请求时间很长
+    #而饥饿加载则会在项目启动时自动创建，降低第一次访问的耗时
+    #开启饥饿加载
+    enabled: true
+    #指定饥饿加载的服务名称
+    clients:
+      - UserService
+      - OrderService
+      - ParkingLotService
