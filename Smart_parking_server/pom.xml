@@ -53,6 +53,11 @@
             <groupId>com.alibaba.cloud</groupId>
             <artifactId>spring-cloud-starter-alibaba-nacos-discovery</artifactId>
         </dependency>
+        <!--    nacos配置动态变更    -->
+        <dependency>
+            <groupId>com.alibaba.cloud</groupId>
+            <artifactId>spring-cloud-starter-alibaba-nacos-config</artifactId>
+        </dependency>
 
         <!--MySql-->
         <dependency>
@@ -95,48 +100,72 @@
 
 
         <!-- Dubbo Spring Boot Starter -->
-<!--        <dependency>-->
-<!--            <groupId>org.apache.dubbo</groupId>-->
-<!--            <artifactId>dubbo-spring-boot-starter</artifactId>-->
-<!--            <version>2.7.8</version>-->
-<!--        </dependency>-->
-
-        <!-- grpc底层通信组件  有问题-->
         <dependency>
-            <groupId>io.grpc</groupId>
-            <artifactId>grpc-netty</artifactId>
-            <version>1.42.0</version>
+            <groupId>org.apache.dubbo</groupId>
+            <artifactId>dubbo-spring-boot-starter</artifactId>
+            <version>3.0.7</version>
         </dependency>
+
+        <dependency>
+            <groupId>org.apache.dubbo</groupId>
+            <artifactId>dubbo-rpc-triple</artifactId>
+            <version>3.0.7</version>
+            <exclusions>
+                <exclusion>
+                    <groupId>org.apache.dubbo</groupId>
+                    <artifactId>dubbo-common</artifactId>
+                </exclusion>
+
+                <exclusion>
+                    <groupId>org.apache.dubbo</groupId>
+                    <artifactId>dubbo-remoting-api</artifactId>
+                </exclusion>
+
+                <exclusion>
+                    <groupId>log4j</groupId>
+                    <artifactId>log4j</artifactId>
+                </exclusion>
+            </exclusions>
+        </dependency>
+
+
+        <!--        <dependency>-->
+        <!--            <groupId>io.grpc</groupId>-->
+        <!--            <artifactId>grpc-all</artifactId>-->
+        <!--            <version>1.42.0</version>-->
+        <!--        </dependency>-->
+
+<!--        &lt;!&ndash; grpc底层通信组件  有问题&ndash;&gt;-->
 <!--        <dependency>-->
 <!--            <groupId>io.grpc</groupId>-->
-<!--            <artifactId>grpc-all</artifactId>-->
+<!--            <artifactId>grpc-netty</artifactId>-->
 <!--            <version>1.42.0</version>-->
 <!--        </dependency>-->
-        <!-- grpc对protobuf的支持工具包-->
-        <dependency>
-            <groupId>io.grpc</groupId>
-            <artifactId>grpc-protobuf</artifactId>
-            <version>1.42.0</version>
-        </dependency>
+<!--        &lt;!&ndash; grpc对protobuf的支持工具包&ndash;&gt;-->
+<!--        <dependency>-->
+<!--            <groupId>io.grpc</groupId>-->
+<!--            <artifactId>grpc-protobuf</artifactId>-->
+<!--            <version>1.42.0</version>-->
+<!--        </dependency>-->
 
-        <!-- grpc通过这个依赖进行存根-->
-        <dependency>
-            <groupId>io.grpc</groupId>
-            <artifactId>grpc-stub</artifactId>
-            <version>1.42.0</version>
-        </dependency>
-        <!-- grpc关于注解方面的api-->
-        <dependency>
-            <groupId>org.apache.tomcat</groupId>
-            <artifactId>annotations-api</artifactId>
-            <version>6.0.53</version>
-        </dependency>
-        <!-- spring boot 集成的grpc包-->
-        <dependency>
-            <groupId>net.devh</groupId>
-            <artifactId>grpc-spring-boot-starter</artifactId>
-            <version>2.13.0.RELEASE</version>
-        </dependency>
+<!--        &lt;!&ndash; grpc通过这个依赖进行存根&ndash;&gt;-->
+<!--        <dependency>-->
+<!--            <groupId>io.grpc</groupId>-->
+<!--            <artifactId>grpc-stub</artifactId>-->
+<!--            <version>1.42.0</version>-->
+<!--        </dependency>-->
+<!--        &lt;!&ndash; grpc关于注解方面的api&ndash;&gt;-->
+<!--        <dependency>-->
+<!--            <groupId>org.apache.tomcat</groupId>-->
+<!--            <artifactId>annotations-api</artifactId>-->
+<!--            <version>6.0.53</version>-->
+<!--        </dependency>-->
+<!--        &lt;!&ndash; spring boot 集成的grpc包&ndash;&gt;-->
+<!--        <dependency>-->
+<!--            <groupId>net.devh</groupId>-->
+<!--            <artifactId>grpc-spring-boot-starter</artifactId>-->
+<!--            <version>2.13.0.RELEASE</version>-->
+<!--        </dependency>-->
 
     </dependencies>
 
@@ -147,51 +176,7 @@
     </properties>
 
 
-    <build>
-        <plugins>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-compiler-plugin</artifactId>
-                <version>3.8.1</version>
-                <configuration>
-                    <source>8</source>
-                    <target>8</target>
-                </configuration>
-            </plugin>
-            <!--            在maven中增加相应的依赖插件-->
-            <plugin>
-                <groupId>org.xolstice.maven.plugins</groupId>
-                <artifactId>protobuf-maven-plugin</artifactId>
-                <version>0.6.1</version>
-                <configuration>
-                    <protocArtifact>com.google.protobuf:protoc:3.17.2:exe:${os.detected.classifier}</protocArtifact>
-                    <pluginId>grpc-java</pluginId>
-                    <pluginArtifact>io.grpc:protoc-gen-grpc-java:1.39.0:exe:${os.detected.classifier}</pluginArtifact>
-                    <!--                    <protoSourceRoot>src/main/resources</protoSourceRoot>-->
-                    <!--                    <protoSourceRoot>你的文件路径</protoSourceRoot>-->
-                </configuration>
-                <executions>
-                    <execution>
-                        <goals>
-                            <!--                            生成消息代码-->
-                            <goal>compile</goal>
-                            <!--                            生成grpc的通信文件-->
-                            <goal>compile-custom</goal>
-                        </goals>
-                    </execution>
-                </executions>
-            </plugin>
-        </plugins>
 
-        <extensions>
-            <extension>
-                <groupId>kr.motd.maven</groupId>
-                <artifactId>os-maven-plugin</artifactId>
-                <version>1.6.2</version>
-            </extension>
-        </extensions>
-
-    </build>
 
 
 </project>

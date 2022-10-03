@@ -4,14 +4,12 @@ package com.example.user.serviceImpl;
 import com.example.user.dao.UserDao;
 import com.example.user.entity.User_information;
 
-import com.example.user.proto.UserProto;
-import com.example.user.proto.UserServiceGrpc;
-import com.google.protobuf.Empty;
 import com.saltfish.example.demo.VehicleFileDao;
-import io.grpc.stub.StreamObserver;
 import net.devh.boot.grpc.server.service.GrpcService;
-import org.example.entity.parkingLots.Parking_for_user;
-import org.example.entity.user.User;
+import org.apache.dubbo.config.annotation.DubboService;
+import org.example.api.entity.parkingLots.Parking_for_user;
+import org.example.api.entity.user.User;
+import org.example.api.service.UserService;
 import org.springframework.context.annotation.Import;
 import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.stereotype.Service;
@@ -21,25 +19,19 @@ import javax.annotation.Resource;
 import java.io.IOException;
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
-import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
 
 
-@Service
-@GrpcService
-@Import({
-        com.saltfish.example.demo.VehicleFileDao.class,
-        com.saltfish.example.aseptcut.UploadAsept.class
-})
-public class UserServiceImpl  extends UserServiceGrpc.UserServiceImplBase {
+@DubboService(version = "1.0")
+public class UserServiceImpl  implements UserService {
 
     @Resource
     private UserDao userDao;
 
 
-    @Resource
-    private VehicleFileDao vehicleFileDao;
+//    @Resource
+//    private VehicleFileDao vehicleFileDao;
 
 
     @Resource
@@ -346,7 +338,7 @@ public class UserServiceImpl  extends UserServiceGrpc.UserServiceImplBase {
      * @return 用户列表
      */
     public List<User> getAllUsers() {
-//        List<User> users = userDao.getAllUsers();
+        List<User> users = userDao.getAllUsers();
 //        List<User> newUsers=new ArrayList<>();
 //        for (int i = 0; i < users.size(); i++) {
 //            List<String> vehicle=vehicleFeignService.getUserVehicle(users.get(i).getUser_name());
@@ -355,7 +347,7 @@ public class UserServiceImpl  extends UserServiceGrpc.UserServiceImplBase {
 //            newUsers.add(t);
 //        }
 //        return newUsers;
-        return null;
+        return users;
     }
 
 
@@ -388,23 +380,23 @@ public class UserServiceImpl  extends UserServiceGrpc.UserServiceImplBase {
         return null;
     }
 
-
-    @Override
-    public void getAllUsers(Empty request, StreamObserver<UserProto.userListResponse> responseObserver) {
-        List<User> allUsers = getAllUsers();
-        UserProto.userResponse.Builder builder=UserProto.userResponse.newBuilder();
-        List<UserProto.userResponse> userList=new ArrayList<>();
-        for (int i = 0; i < allUsers.size(); i++) {
-            builder.clear();
-            builder.setUserName(allUsers.get(i).getUser_name())
-                    .setUserId(allUsers.get(i).getUser_id());
-            List<String> vehicle = allUsers.get(i).getVehicle();
-            for (int j = 0; j < vehicle.size(); j++) {
-                builder.setVehicle(j,vehicle.get(j));
-            }
-            userList.add(builder.build());
-        }
-        UserProto.userListResponse response = UserProto.userListResponse.newBuilder().setUserList(allUsers.size(),builder).build();
-
-    }
+//
+//    @Override
+//    public void getAllUsers(Empty request, StreamObserver<UserProto.userListResponse> responseObserver) {
+//        List<User> allUsers = getAllUsers();
+//        UserProto.userResponse.Builder builder=UserProto.userResponse.newBuilder();
+//        List<UserProto.userResponse> userList=new ArrayList<>();
+//        for (int i = 0; i < allUsers.size(); i++) {
+//            builder.clear();
+//            builder.setUserName(allUsers.get(i).getUser_name())
+//                    .setUserId(allUsers.get(i).getUser_id());
+//            List<String> vehicle = allUsers.get(i).getVehicle();
+//            for (int j = 0; j < vehicle.size(); j++) {
+//                builder.setVehicle(j,vehicle.get(j));
+//            }
+//            userList.add(builder.build());
+//        }
+//        UserProto.userListResponse response = UserProto.userListResponse.newBuilder().setUserList(allUsers.size(),builder).build();
+//
+//    }
 }

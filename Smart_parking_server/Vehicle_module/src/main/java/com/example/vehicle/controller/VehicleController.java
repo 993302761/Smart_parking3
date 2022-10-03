@@ -25,10 +25,10 @@ public class VehicleController {
 
     @ApiOperation(value = "绑定车辆")
 //    @PostMapping(value = "/vehicle_binding", produces = "text/plain;charset=utf-8",consumes =  MediaType.MULTIPART_FORM_DATA_VALUE)
-    @PostMapping(value = "/vehicle_binding/{user_name}/{user_id}/{license_plate_number}/{vehicle_photos}/{registration}/{driving_permit}", produces = "text/plain;charset=utf-8")
+    @PostMapping(value = "/add_Vehicle/{user_name}/{user_id}/{license_plate_number}/{vehicle_photos}/{registration}/{driving_permit}", produces = "text/plain;charset=utf-8")
 //    @HystrixCommand
 
-    public String  vehicle_binding (@PathVariable("user_name")String user_name,
+    public String  add_Vehicle (@PathVariable("user_name")String user_name,
                                     @PathVariable("user_id")String user_id,
                                     @PathVariable("license_plate_number")String license_plate_number,
                                     @PathVariable("vehicle_photos")String vehicle_photos,
@@ -59,9 +59,9 @@ public class VehicleController {
             @ApiImplicitParam(name = "user_name", value = "用户名", required = true, dataType = "String"),
             @ApiImplicitParam(name = "license_plate_number", value = "车牌号", required = true, dataType = "String"),
     })
-    @DeleteMapping(value = "/deleteVehicle/{user_name}/{license_plate_number}", produces = "text/plain; charset=utf-8")
+    @DeleteMapping(value = "/delete_User_Vehicle/{user_name}/{license_plate_number}", produces = "text/plain; charset=utf-8")
 //    @HystrixCommand
-    public String deleteVehicle (@PathVariable String user_name, @PathVariable String license_plate_number){
+    public String delete_User_Vehicle (@PathVariable String user_name, @PathVariable String license_plate_number){
         return vehicleService.delete_User_Vehicle(user_name, license_plate_number);
     }
 
@@ -70,9 +70,9 @@ public class VehicleController {
     @ApiImplicitParams({
             @ApiImplicitParam(name = "user_name", value = "用户名", required = true, dataType = "String")
     })
-    @DeleteMapping(value = "/deleteAllVehicle/{user_name}", produces = "text/plain; charset=utf-8")
+    @DeleteMapping(value = "/delete_All_Vehicle/{user_name}", produces = "text/plain; charset=utf-8")
 //    @HystrixCommand
-    public String deleteAllVehicle (@PathVariable String user_name){
+    public String delete_All_Vehicle (@PathVariable String user_name){
         return vehicleService.delete_All_Vehicle(user_name);
     }
 

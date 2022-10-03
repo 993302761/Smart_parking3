@@ -1,13 +1,14 @@
 package com.saltfish.example.service;
 
-import io.micrometer.core.instrument.util.StringUtils;
 import org.apache.commons.fileupload.FileItem;
 import org.apache.commons.fileupload.FileItemFactory;
 import org.apache.commons.fileupload.disk.DiskFileItemFactory;
 import org.apache.http.entity.ContentType;
+import org.apache.ibatis.annotations.Mapper;
 import org.csource.common.MyException;
 import org.csource.common.NameValuePair;
 import org.csource.fastdfs.*;
+import org.junit.platform.commons.util.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.web.multipart.MultipartFile;
@@ -15,6 +16,7 @@ import org.springframework.web.multipart.MultipartFile;
 import java.io.*;
 
 @Service
+@Mapper
 public class FastDFSClient {
     @Autowired
     private static StorageClient storageClient;

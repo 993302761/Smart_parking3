@@ -1,15 +1,15 @@
 package com.example.user;
 
+import org.apache.dubbo.config.spring.context.annotation.EnableDubbo;
+import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 
 
 @SpringBootApplication
-//@EnableFeignClients(basePackages = "com.feign.api")
-////@EnableDiscoveryClient  //@EnableEurekaClient只适用于Eureka作为注册中心，@EnableDiscoveryClient 可以是其他注册中心。
-//@EnableCircuitBreaker
-////Hystrix开启
-//@EnableHystrix
+@EnableDubbo        //开启基于注解的dubbo功能
+@EnableDiscoveryClient
 public class    UserApplication {
 
     public static void main(String[] args) {

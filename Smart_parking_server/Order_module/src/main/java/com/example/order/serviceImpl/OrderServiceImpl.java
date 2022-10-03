@@ -3,8 +3,9 @@ package com.example.order.serviceImpl;
 import com.example.order.dao.OrderDao;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.lang3.BooleanUtils;
-import org.example.entity.order.Order;
-import org.springframework.context.annotation.Import;
+import org.apache.dubbo.config.annotation.DubboService;
+import org.example.api.entity.order.Order;
+import org.example.api.service.OrderService;
 import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.stereotype.Service;
 
@@ -14,10 +15,9 @@ import java.text.SimpleDateFormat;
 import java.util.*;
 import java.util.concurrent.TimeUnit;
 
-@Service
-
+@DubboService
 @Slf4j
-public class OrderServiceImpl {
+public class OrderServiceImpl implements OrderService {
 
 
     @Resource
@@ -499,7 +499,7 @@ public class OrderServiceImpl {
      * @param order_number 订单编号
      * @return 是否成功
      */
-    public String cancelOrder (String order_number){
+    public String cancelOrder(String order_number){
         String s=add_available_parking_spaces_num(order_number);
         if (s!=null){
             return s;

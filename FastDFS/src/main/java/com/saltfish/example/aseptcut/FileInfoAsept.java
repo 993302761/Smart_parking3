@@ -4,6 +4,7 @@ import com.saltfish.example.annotation.GetFileInfo;
 import com.saltfish.example.annotation.GetFileMeta;
 import com.saltfish.example.annotation.GetFileMetaArr;
 import com.saltfish.example.service.FastDFSClient;
+import org.apache.ibatis.annotations.Mapper;
 import org.aspectj.lang.ProceedingJoinPoint;
 import org.aspectj.lang.Signature;
 import org.aspectj.lang.annotation.Around;
@@ -17,7 +18,7 @@ import org.springframework.stereotype.Component;
 import java.lang.reflect.Method;
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
-
+@Mapper
 @Component
 @Aspect
 public class FileInfoAsept {

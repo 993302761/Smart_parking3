@@ -6,8 +6,8 @@ import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiImplicitParam;
 import io.swagger.annotations.ApiImplicitParams;
 import io.swagger.annotations.ApiOperation;
-import org.example.entity.parkingLots.Parking;
-import org.example.entity.parkingLots.Parking_for_user;
+import org.example.api.entity.parkingLots.Parking;
+import org.example.api.entity.parkingLots.Parking_for_user;
 import org.springframework.web.bind.annotation.*;
 
 import javax.annotation.Resource;

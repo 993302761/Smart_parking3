@@ -4,9 +4,10 @@ import com.example.parkingLots.dao.ParkingLotDao;
 import com.example.parkingLots.entity.Parking_lot_information;
 
 import org.apache.commons.lang3.BooleanUtils;
-import org.example.entity.parkingLots.Parking;
-import org.example.entity.parkingLots.Parking_for_user;
-import org.springframework.context.annotation.Import;
+import org.apache.dubbo.config.annotation.DubboService;
+import org.example.api.entity.parkingLots.Parking;
+import org.example.api.entity.parkingLots.Parking_for_user;
+import org.example.api.service.ParkingLotService;
 import org.springframework.data.geo.*;
 import org.springframework.data.redis.connection.RedisGeoCommands;
 import org.springframework.data.redis.core.RedisTemplate;
@@ -19,9 +20,8 @@ import java.util.Map;
 import java.util.concurrent.TimeUnit;
 import java.util.stream.Collectors;
 
-@Service
-
-public class ParkingLotServiceImpl {
+@DubboService
+public class ParkingLotServiceImpl implements ParkingLotService {
 
     @Resource
     private ParkingLotDao parkingLotDao;

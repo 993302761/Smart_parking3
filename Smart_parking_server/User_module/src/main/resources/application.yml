@@ -45,8 +45,8 @@ spring:
       #服务间调用默认使用轮训，优先使用相同集群的服务，若不可用，再找其他的
       discovery:
         cluster-name: ServerMaster
-        ephemeral: false    #设置为非临时实例
-#        namespace:    #填写命名空间id，用于做环境隔离
+#        ephemeral: true    #设置为临时实例
+#        namespace: e202b325-d714-407e-9e26-80b28704e370   #填写命名空间id，用于做环境隔离
 
 
 ribbon:
@@ -64,15 +64,13 @@ ribbon:
 
 dubbo:
   application:
-    name: userService
-    #当前服务名字
+    name: UserServiceDubbo       #当前服务名字
+    qos-enable: false   #关闭qos
+#    register-mode: instance
   registry:
-    address:
-    #注册中心地址
-    protocol:
-    #注册中心协议
+    address: nacos://localhost:8848       #注册中心地址
   protocol:
-    name: dubbo
-    #协议
-    port: 100800
+    name: tri    #协议
+    port: 20880      #（ -1 表示自增端口，从 20880 开始）
+    host: localhost
 

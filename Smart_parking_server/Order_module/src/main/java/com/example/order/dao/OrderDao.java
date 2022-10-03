@@ -1,7 +1,7 @@
 package com.example.order.dao;
 
 import org.apache.ibatis.annotations.*;
-import org.example.entity.order.Order;
+import org.example.api.entity.order.Order;
 
 import java.util.List;
 

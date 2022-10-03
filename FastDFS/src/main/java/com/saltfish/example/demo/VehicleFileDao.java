@@ -1,11 +1,12 @@
 package com.saltfish.example.demo;
 
 import com.saltfish.example.annotation.*;
+import org.apache.ibatis.annotations.Mapper;
 import org.csource.common.NameValuePair;
 import org.csource.fastdfs.FileInfo;
 import org.springframework.stereotype.Repository;
 import org.springframework.web.multipart.MultipartFile;
-
+@Mapper
 @Repository
 public class VehicleFileDao {
 

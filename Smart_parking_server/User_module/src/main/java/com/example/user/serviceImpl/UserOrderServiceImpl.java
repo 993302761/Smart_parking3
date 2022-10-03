@@ -2,7 +2,7 @@ package com.example.user.serviceImpl;
 
 
 import lombok.extern.slf4j.Slf4j;
-import org.example.entity.order.Order;
+import org.example.api.entity.order.Order;
 import org.springframework.amqp.rabbit.connection.CorrelationData;
 import org.springframework.amqp.rabbit.core.RabbitTemplate;
 import org.springframework.data.redis.core.RedisTemplate;

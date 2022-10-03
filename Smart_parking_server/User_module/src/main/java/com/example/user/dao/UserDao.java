@@ -2,7 +2,7 @@ package com.example.user.dao;
 
 import com.example.user.entity.User_information;
 import org.apache.ibatis.annotations.*;
-import org.example.entity.user.User;
+import org.example.api.entity.user.User;
 
 import java.util.List;
 

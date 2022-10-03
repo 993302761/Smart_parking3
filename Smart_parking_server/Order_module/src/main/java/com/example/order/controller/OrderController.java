@@ -6,7 +6,7 @@ import io.swagger.annotations.ApiImplicitParam;
 import io.swagger.annotations.ApiImplicitParams;
 import io.swagger.annotations.ApiOperation;
 import lombok.extern.slf4j.Slf4j;
-import org.example.entity.order.Order;
+import org.example.api.entity.order.Order;
 import org.springframework.amqp.rabbit.annotation.Exchange;
 import org.springframework.amqp.rabbit.annotation.Queue;
 import org.springframework.amqp.rabbit.annotation.QueueBinding;
@@ -92,8 +92,8 @@ public class    OrderController {
     @ApiImplicitParams({
             @ApiImplicitParam(name = "order_number", value = "订单编号", required = true, dataType = "String")
     })
-    @GetMapping(value = "/userGetParkingOrder/{order_number}", produces = "application/json; charset=utf-8")
-    public Order userGetParkingOrder (@PathVariable String order_number){
+    @GetMapping(value = "/getOrderByNumber/{order_number}", produces = "application/json; charset=utf-8")
+    public Order getOrderByNumber (@PathVariable String order_number){
         return orderService.getOrderByNumber(order_number);
     }
 
@@ -165,8 +165,8 @@ public class    OrderController {
             @ApiImplicitParam(name = "parking_lot_number", value = "停车场编号", required = true, dataType = "String"),
             @ApiImplicitParam(name = "order_number", value = "订单编号", required = true, dataType = "String")
     })
-    @PutMapping(value = "/parking_cancellation_Order/{parking_lot_number}/{order_number}", produces = "text/plain;charset=utf-8")
-    public String parking_cancellation_Order (@PathVariable String parking_lot_number,@PathVariable String order_number){
+    @PutMapping(value = "/cancelOrder/{parking_lot_number}/{order_number}", produces = "text/plain;charset=utf-8")
+    public String cancelOrder (@PathVariable String parking_lot_number,@PathVariable String order_number){
         return orderService.cancelOrder(order_number);
     }
 

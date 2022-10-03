@@ -3,7 +3,9 @@ package com.example.administrators.service;
 import com.example.administrators.dao.AdministratorsDao;
 import com.example.administrators.entity.Administrators;
 
-import net.devh.boot.grpc.server.service.GrpcService;
+import org.apache.dubbo.config.annotation.DubboReference;
+import org.example.api.entity.user.User;
+import org.example.api.service.UserService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Service;
@@ -18,7 +20,8 @@ public class AdministratorsServiceImpl  {
     private AdministratorsDao administratorsDao;
 
 
-
+    @DubboReference(check = false ,version = "1.0")
+    private UserService userService;
 
     private static final Logger LOGGER= LoggerFactory.getLogger(AdministratorsServiceImpl.class);
 
@@ -52,9 +55,8 @@ public class AdministratorsServiceImpl  {
      * @return 用户列表
      */
 
-    public Object getAllUsers() {
-//        return userFeignService.getAllUsers();
-        return null;
+    public List<User> getAllUsers() {
+        return userService.getAllUsers();
     }
 
 
