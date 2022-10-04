@@ -4,7 +4,6 @@ import org.apache.commons.fileupload.FileItem;
 import org.apache.commons.fileupload.FileItemFactory;
 import org.apache.commons.fileupload.disk.DiskFileItemFactory;
 import org.apache.http.entity.ContentType;
-import org.apache.ibatis.annotations.Mapper;
 import org.csource.common.MyException;
 import org.csource.common.NameValuePair;
 import org.csource.fastdfs.*;
@@ -14,17 +13,21 @@ import org.springframework.stereotype.Service;
 import org.springframework.web.multipart.MultipartFile;
 
 import java.io.*;
+import java.util.Properties;
 
 @Service
-@Mapper
 public class FastDFSClient {
     @Autowired
     private static StorageClient storageClient;
 
     static {
         try {
+            Properties props = new Properties();
+            props.put(ClientGlobal.PROP_KEY_TRACKER_SERVERS,"10.12.65.75:22122");
+            props.put(ClientGlobal.PROP_KEY_CONNECT_TIMEOUT_IN_SECONDS,10);
+            props.put(ClientGlobal.PROP_KEY_NETWORK_TIMEOUT_IN_SECONDS,30);
             // 加载配置文件
-            ClientGlobal.init("fdfs_client.conf");
+            ClientGlobal.initByProperties(props);
             // 初始化 Tracker 客户端
             TrackerClient trackerClient = new TrackerClient(ClientGlobal.g_tracker_group);
             // 初始化 Tracker 服务端

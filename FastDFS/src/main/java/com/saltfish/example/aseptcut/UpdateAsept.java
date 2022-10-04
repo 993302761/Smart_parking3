@@ -2,7 +2,6 @@ package com.saltfish.example.aseptcut;
 
 import com.saltfish.example.annotation.DFSUpdate;
 import com.saltfish.example.service.FastDFSClient;
-import org.apache.ibatis.annotations.Mapper;
 import org.aspectj.lang.ProceedingJoinPoint;
 import org.aspectj.lang.Signature;
 import org.aspectj.lang.annotation.Around;
@@ -15,7 +14,6 @@ import java.io.File;
 import java.lang.reflect.Method;
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
-@Mapper
 @Component
 @Aspect
 public class UpdateAsept {

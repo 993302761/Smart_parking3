@@ -30,3 +30,15 @@ spring:
         cluster-name: ServerMaster
         ephemeral: false    #设置为非临时实例
 #        namespace:    #填写命名空间id，用于做环境隔离
+
+
+dubbo:
+  consumer:
+    check: false    #关闭启动时检查
+    retries: 2      #请求服务失败时，重试次数
+  application:
+    name: IntegralServiceDubbo        #当前服务名字
+    qos-enable: false
+  #    register-mode: instance   #应用级服务发现
+  registry:
+    address: nacos://localhost:8848       #注册中心地址

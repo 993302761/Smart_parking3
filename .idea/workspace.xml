@@ -5,13 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5165a8d4-14ee-4222-9aca-054a42b0ef5a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Smart_parking_server/Administrators_module/src/main/java/com/example/administrators/config/SelfNacosDiscovery.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Smart_parking_server/BasicTools/src/main/java/org/example/api/service/OrderService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Smart_parking_server/BasicTools/src/main/java/org/example/api/service/ParkingLotService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Smart_parking_server/BasicTools/src/main/java/org/example/api/service/UserService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Smart_parking_server/BasicTools/src/main/java/org/example/api/service/VehicleService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Smart_parking_server/User_module/src/main/java/com/example/user/config/SelfNacosDiscovery.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FastDFS/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/FastDFS/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/FastDFS/src/main/java/com/saltfish/example/aseptcut/DeleteAsept.java" beforeDir="false" afterPath="$PROJECT_DIR$/FastDFS/src/main/java/com/saltfish/example/aseptcut/DeleteAsept.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/FastDFS/src/main/java/com/saltfish/example/aseptcut/DownLoadAsept.java" beforeDir="false" afterPath="$PROJECT_DIR$/FastDFS/src/main/java/com/saltfish/example/aseptcut/DownLoadAsept.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/FastDFS/src/main/java/com/saltfish/example/aseptcut/FileInfoAsept.java" beforeDir="false" afterPath="$PROJECT_DIR$/FastDFS/src/main/java/com/saltfish/example/aseptcut/FileInfoAsept.java" afterDir="false" />
@@ -19,108 +12,23 @@
       <change beforePath="$PROJECT_DIR$/FastDFS/src/main/java/com/saltfish/example/aseptcut/UploadAsept.java" beforeDir="false" afterPath="$PROJECT_DIR$/FastDFS/src/main/java/com/saltfish/example/aseptcut/UploadAsept.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/FastDFS/src/main/java/com/saltfish/example/demo/VehicleFileDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/FastDFS/src/main/java/com/saltfish/example/demo/VehicleFileDao.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/FastDFS/src/main/java/com/saltfish/example/service/FastDFSClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/FastDFS/src/main/java/com/saltfish/example/service/FastDFSClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NacosScript/nacos_start.sh" beforeDir="false" afterPath="$PROJECT_DIR$/NacosScript/nacos_start.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NacosScript/nacos_stop.sh" beforeDir="false" afterPath="$PROJECT_DIR$/NacosScript/nacos_stop.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Smart_parking_server/Administrators_module/src/main/java/com/example/administrators/AdministratorsApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/Smart_parking_server/Administrators_module/src/main/java/com/example/administrators/AdministratorsApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GateWayServer/GateWay_APP/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/GateWayServer/GateWay_APP/target/classes/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GateWayServer/GateWay_Web/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/GateWayServer/GateWay_Web/target/classes/application.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Smart_parking_server/Administrators_module/src/main/java/com/example/administrators/service/AdministratorsServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/Smart_parking_server/Administrators_module/src/main/java/com/example/administrators/service/AdministratorsServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Smart_parking_server/Administrators_module/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/Smart_parking_server/Administrators_module/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Smart_parking_server/Administrators_module/target/classes/application.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Smart_parking_server/Administrators_module/target/classes/bootstrap.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Smart_parking_server/BasicTools/src/main/java/org/example/entity/order/Order.java" beforeDir="false" afterPath="$PROJECT_DIR$/Smart_parking_server/BasicTools/src/main/java/org/example/api/entity/order/Order.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Smart_parking_server/BasicTools/src/main/java/org/example/entity/parkingLots/Parking.java" beforeDir="false" afterPath="$PROJECT_DIR$/Smart_parking_server/BasicTools/src/main/java/org/example/api/entity/parkingLots/Parking.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Smart_parking_server/BasicTools/src/main/java/org/example/entity/parkingLots/Parking_for_user.java" beforeDir="false" afterPath="$PROJECT_DIR$/Smart_parking_server/BasicTools/src/main/java/org/example/api/entity/parkingLots/Parking_for_user.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Smart_parking_server/BasicTools/src/main/java/org/example/entity/user/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/Smart_parking_server/BasicTools/src/main/java/org/example/api/entity/user/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Smart_parking_server/Order_module/src/main/java/com/example/order/controller/OrderController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Smart_parking_server/Order_module/src/main/java/com/example/order/controller/OrderController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Smart_parking_server/Order_module/src/main/java/com/example/order/dao/OrderDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/Smart_parking_server/Order_module/src/main/java/com/example/order/dao/OrderDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Smart_parking_server/Order_module/src/main/java/com/example/order/serviceImpl/OrderServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/Smart_parking_server/Order_module/src/main/java/com/example/order/serviceImpl/OrderServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Smart_parking_server/ParkingLot_module/src/main/java/com/example/parkingLots/ParkingLotsApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/Smart_parking_server/ParkingLot_module/src/main/java/com/example/parkingLots/ParkingLotsApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Smart_parking_server/ParkingLot_module/src/main/java/com/example/parkingLots/controller/ParkingLotsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Smart_parking_server/ParkingLot_module/src/main/java/com/example/parkingLots/controller/ParkingLotsController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Smart_parking_server/ParkingLot_module/src/main/java/com/example/parkingLots/dao/ParkingLotDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/Smart_parking_server/ParkingLot_module/src/main/java/com/example/parkingLots/dao/ParkingLotDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Smart_parking_server/ParkingLot_module/src/main/java/com/example/parkingLots/serviceImpl/ParkingLotServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/Smart_parking_server/ParkingLot_module/src/main/java/com/example/parkingLots/serviceImpl/ParkingLotServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Smart_parking_server/Administrators_module/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/Smart_parking_server/Administrators_module/target/classes/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Smart_parking_server/Integral_module/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/Smart_parking_server/Integral_module/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Smart_parking_server/Order_module/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/Smart_parking_server/Order_module/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Smart_parking_server/ParkingLot_module/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/Smart_parking_server/ParkingLot_module/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Smart_parking_server/User_module/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Smart_parking_server/User_module/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Smart_parking_server/User_module/src/main/java/com/example/user/UserApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/Smart_parking_server/User_module/src/main/java/com/example/user/UserApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Smart_parking_server/User_module/src/main/java/com/example/user/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Smart_parking_server/User_module/src/main/java/com/example/user/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Smart_parking_server/User_module/src/main/java/com/example/user/controller/UserOrderController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Smart_parking_server/User_module/src/main/java/com/example/user/controller/UserOrderController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Smart_parking_server/User_module/src/main/java/com/example/user/dao/UserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/Smart_parking_server/User_module/src/main/java/com/example/user/dao/UserDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Smart_parking_server/User_module/src/main/java/com/example/user/serviceImpl/UserOrderServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/Smart_parking_server/User_module/src/main/java/com/example/user/serviceImpl/UserOrderServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Smart_parking_server/User_module/src/main/java/com/example/user/proto/UserProto.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Smart_parking_server/User_module/src/main/java/com/example/user/proto/UserServiceGrpc.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Smart_parking_server/User_module/src/main/java/com/example/user/serviceImpl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/Smart_parking_server/User_module/src/main/java/com/example/user/serviceImpl/UserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Smart_parking_server/User_module/src/main/proto/User.proto" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Smart_parking_server/User_module/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/Smart_parking_server/User_module/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Smart_parking_server/User_module/target/classes/application.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Smart_parking_server/User_module/target/classes/bootstrap.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Smart_parking_server/User_module/target/classes/static/upload.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Smart_parking_server/User_module/target/classes/static/upload2.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Smart_parking_server/User_module/target/generated-sources/protobuf/grpc-java/org/example/proto/user/UserServiceGrpc.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Smart_parking_server/User_module/target/generated-sources/protobuf/java/org/example/proto/user/UserProto.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Smart_parking_server/User_module/target/protoc-dependencies/405a117c51cb2f3611d557f7bb776036/google/protobuf/any.proto" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Smart_parking_server/User_module/target/protoc-dependencies/405a117c51cb2f3611d557f7bb776036/google/protobuf/api.proto" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Smart_parking_server/User_module/target/protoc-dependencies/405a117c51cb2f3611d557f7bb776036/google/protobuf/compiler/plugin.proto" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Smart_parking_server/User_module/target/protoc-dependencies/405a117c51cb2f3611d557f7bb776036/google/protobuf/descriptor.proto" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Smart_parking_server/User_module/target/protoc-dependencies/405a117c51cb2f3611d557f7bb776036/google/protobuf/duration.proto" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Smart_parking_server/User_module/target/protoc-dependencies/405a117c51cb2f3611d557f7bb776036/google/protobuf/empty.proto" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Smart_parking_server/User_module/target/protoc-dependencies/405a117c51cb2f3611d557f7bb776036/google/protobuf/field_mask.proto" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Smart_parking_server/User_module/target/protoc-dependencies/405a117c51cb2f3611d557f7bb776036/google/protobuf/source_context.proto" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Smart_parking_server/User_module/target/protoc-dependencies/405a117c51cb2f3611d557f7bb776036/google/protobuf/struct.proto" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Smart_parking_server/User_module/target/protoc-dependencies/405a117c51cb2f3611d557f7bb776036/google/protobuf/timestamp.proto" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Smart_parking_server/User_module/target/protoc-dependencies/405a117c51cb2f3611d557f7bb776036/google/protobuf/type.proto" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Smart_parking_server/User_module/target/protoc-dependencies/405a117c51cb2f3611d557f7bb776036/google/protobuf/wrappers.proto" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Smart_parking_server/User_module/target/protoc-dependencies/4b74d0015af5df3a0a8cae386dd8d077/google/api/annotations.proto" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Smart_parking_server/User_module/target/protoc-dependencies/4b74d0015af5df3a0a8cae386dd8d077/google/api/auth.proto" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Smart_parking_server/User_module/target/protoc-dependencies/4b74d0015af5df3a0a8cae386dd8d077/google/api/backend.proto" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Smart_parking_server/User_module/target/protoc-dependencies/4b74d0015af5df3a0a8cae386dd8d077/google/api/billing.proto" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Smart_parking_server/User_module/target/protoc-dependencies/4b74d0015af5df3a0a8cae386dd8d077/google/api/client.proto" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Smart_parking_server/User_module/target/protoc-dependencies/4b74d0015af5df3a0a8cae386dd8d077/google/api/config_change.proto" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Smart_parking_server/User_module/target/protoc-dependencies/4b74d0015af5df3a0a8cae386dd8d077/google/api/consumer.proto" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Smart_parking_server/User_module/target/protoc-dependencies/4b74d0015af5df3a0a8cae386dd8d077/google/api/context.proto" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Smart_parking_server/User_module/target/protoc-dependencies/4b74d0015af5df3a0a8cae386dd8d077/google/api/control.proto" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Smart_parking_server/User_module/target/protoc-dependencies/4b74d0015af5df3a0a8cae386dd8d077/google/api/distribution.proto" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Smart_parking_server/User_module/target/protoc-dependencies/4b74d0015af5df3a0a8cae386dd8d077/google/api/documentation.proto" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Smart_parking_server/User_module/target/protoc-dependencies/4b74d0015af5df3a0a8cae386dd8d077/google/api/endpoint.proto" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Smart_parking_server/User_module/target/protoc-dependencies/4b74d0015af5df3a0a8cae386dd8d077/google/api/field_behavior.proto" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Smart_parking_server/User_module/target/protoc-dependencies/4b74d0015af5df3a0a8cae386dd8d077/google/api/http.proto" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Smart_parking_server/User_module/target/protoc-dependencies/4b74d0015af5df3a0a8cae386dd8d077/google/api/httpbody.proto" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Smart_parking_server/User_module/target/protoc-dependencies/4b74d0015af5df3a0a8cae386dd8d077/google/api/label.proto" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Smart_parking_server/User_module/target/protoc-dependencies/4b74d0015af5df3a0a8cae386dd8d077/google/api/launch_stage.proto" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Smart_parking_server/User_module/target/protoc-dependencies/4b74d0015af5df3a0a8cae386dd8d077/google/api/log.proto" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Smart_parking_server/User_module/target/protoc-dependencies/4b74d0015af5df3a0a8cae386dd8d077/google/api/logging.proto" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Smart_parking_server/User_module/target/protoc-dependencies/4b74d0015af5df3a0a8cae386dd8d077/google/api/metric.proto" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Smart_parking_server/User_module/target/protoc-dependencies/4b74d0015af5df3a0a8cae386dd8d077/google/api/monitored_resource.proto" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Smart_parking_server/User_module/target/protoc-dependencies/4b74d0015af5df3a0a8cae386dd8d077/google/api/monitoring.proto" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Smart_parking_server/User_module/target/protoc-dependencies/4b74d0015af5df3a0a8cae386dd8d077/google/api/quota.proto" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Smart_parking_server/User_module/target/protoc-dependencies/4b74d0015af5df3a0a8cae386dd8d077/google/api/resource.proto" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Smart_parking_server/User_module/target/protoc-dependencies/4b74d0015af5df3a0a8cae386dd8d077/google/api/service.proto" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Smart_parking_server/User_module/target/protoc-dependencies/4b74d0015af5df3a0a8cae386dd8d077/google/api/source_info.proto" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Smart_parking_server/User_module/target/protoc-dependencies/4b74d0015af5df3a0a8cae386dd8d077/google/api/system_parameter.proto" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Smart_parking_server/User_module/target/protoc-dependencies/4b74d0015af5df3a0a8cae386dd8d077/google/api/usage.proto" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Smart_parking_server/User_module/target/protoc-dependencies/4b74d0015af5df3a0a8cae386dd8d077/google/cloud/audit/audit_log.proto" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Smart_parking_server/User_module/target/protoc-dependencies/4b74d0015af5df3a0a8cae386dd8d077/google/geo/type/viewport.proto" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Smart_parking_server/User_module/target/protoc-dependencies/4b74d0015af5df3a0a8cae386dd8d077/google/logging/type/http_request.proto" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Smart_parking_server/User_module/target/protoc-dependencies/4b74d0015af5df3a0a8cae386dd8d077/google/logging/type/log_severity.proto" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Smart_parking_server/User_module/target/protoc-dependencies/4b74d0015af5df3a0a8cae386dd8d077/google/longrunning/operations.proto" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Smart_parking_server/User_module/target/protoc-dependencies/4b74d0015af5df3a0a8cae386dd8d077/google/rpc/code.proto" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Smart_parking_server/User_module/target/protoc-dependencies/4b74d0015af5df3a0a8cae386dd8d077/google/rpc/context/attribute_context.proto" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Smart_parking_server/User_module/target/protoc-dependencies/4b74d0015af5df3a0a8cae386dd8d077/google/rpc/error_details.proto" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Smart_parking_server/User_module/target/protoc-dependencies/4b74d0015af5df3a0a8cae386dd8d077/google/rpc/status.proto" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Smart_parking_server/User_module/target/protoc-dependencies/4b74d0015af5df3a0a8cae386dd8d077/google/type/calendar_period.proto" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Smart_parking_server/User_module/target/protoc-dependencies/4b74d0015af5df3a0a8cae386dd8d077/google/type/color.proto" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Smart_parking_server/User_module/target/protoc-dependencies/4b74d0015af5df3a0a8cae386dd8d077/google/type/date.proto" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Smart_parking_server/User_module/target/protoc-dependencies/4b74d0015af5df3a0a8cae386dd8d077/google/type/datetime.proto" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Smart_parking_server/User_module/target/protoc-dependencies/4b74d0015af5df3a0a8cae386dd8d077/google/type/dayofweek.proto" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Smart_parking_server/User_module/target/protoc-dependencies/4b74d0015af5df3a0a8cae386dd8d077/google/type/expr.proto" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Smart_parking_server/User_module/target/protoc-dependencies/4b74d0015af5df3a0a8cae386dd8d077/google/type/fraction.proto" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Smart_parking_server/User_module/target/protoc-dependencies/4b74d0015af5df3a0a8cae386dd8d077/google/type/latlng.proto" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Smart_parking_server/User_module/target/protoc-dependencies/4b74d0015af5df3a0a8cae386dd8d077/google/type/money.proto" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Smart_parking_server/User_module/target/protoc-dependencies/4b74d0015af5df3a0a8cae386dd8d077/google/type/postal_address.proto" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Smart_parking_server/User_module/target/protoc-dependencies/4b74d0015af5df3a0a8cae386dd8d077/google/type/quaternion.proto" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Smart_parking_server/User_module/target/protoc-dependencies/4b74d0015af5df3a0a8cae386dd8d077/google/type/timeofday.proto" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Smart_parking_server/User_module/target/protoc-dependencies/deaa714d3e2a227b0a585a3c02ee1904/grpc/binlog/v1/binarylog.proto" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Smart_parking_server/User_module/target/protoc-dependencies/deaa714d3e2a227b0a585a3c02ee1904/grpc/channelz/v1/channelz.proto" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Smart_parking_server/User_module/target/protoc-dependencies/deaa714d3e2a227b0a585a3c02ee1904/grpc/health/v1/health.proto" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Smart_parking_server/User_module/target/protoc-dependencies/deaa714d3e2a227b0a585a3c02ee1904/grpc/reflection/v1alpha/reflection.proto" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Smart_parking_server/User_module/target/protoc-plugins/protoc-3.17.2-linux-x86_64.exe" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Smart_parking_server/User_module/target/protoc-plugins/protoc-gen-grpc-java-1.39.0-linux-x86_64.exe" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Smart_parking_server/Vehicle_module/src/main/java/com/example/vehicle/VehicleApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/Smart_parking_server/Vehicle_module/src/main/java/com/example/vehicle/VehicleApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Smart_parking_server/Vehicle_module/src/main/java/com/example/vehicle/controller/VehicleController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Smart_parking_server/Vehicle_module/src/main/java/com/example/vehicle/controller/VehicleController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Smart_parking_server/Vehicle_module/src/main/java/com/example/vehicle/serviceImpl/VehicleServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/Smart_parking_server/Vehicle_module/src/main/java/com/example/vehicle/serviceImpl/VehicleServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Smart_parking_server/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Smart_parking_server/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Smart_parking_server/User_module/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/Smart_parking_server/User_module/target/classes/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Smart_parking_server/Vehicle_module/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/Smart_parking_server/Vehicle_module/src/main/resources/application.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -132,6 +40,7 @@
       <list>
         <option value="Interface" />
         <option value="Class" />
+        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
@@ -153,7 +62,6 @@
     <setting file="file://$PROJECT_DIR$/Smart_parking_server/User_module/src/main/java/com/example/user/serviceImpl/UserOrderServiceImpl.java" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Smart_parking_server/Administrators_module/src/main/java/com/example/administrators/AdministratorsApplication.java" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Smart_parking_server/User_module/src/main/java/com/example/user/serviceImpl/UserServiceImpl.java" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Smart_parking_server/User_module/src/main/java/com/example/user/proto/UserServiceGrpc.java" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Smart_parking_server/User_module/src/main/resources/application.yml" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Smart_parking_server/Administrators_module/src/main/java/com/example/administrators/controller/AdministratorsController.java" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Smart_parking_server/Administrators_module/src/main/java/com/example/administrators/dao/AdministratorsDao.java" root0="FORCE_HIGHLIGHTING" />
@@ -201,6 +109,8 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
     <property name="jdk.selected.JAVA_MODULE" value="1.8" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/GateWayServer/GateWay_Web/src/main/resources" />
     <property name="node.js.detected.package.eslint" value="true" />
@@ -231,6 +141,13 @@
       <recent name="$PROJECT_DIR$/Smart_parking_server/BasicTools/src/main/java" />
       <recent name="$PROJECT_DIR$" />
     </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.saltfish.example.demo" />
+      <recent name="com.example.user.dao" />
+    </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.example.user.config" />
       <recent name="com.example.vehicle.serviceImpl" />
@@ -247,16 +164,35 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.AdministratorsApplication">
-    <configuration name="AdministratorsApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <module name="Administrators_module" />
+  <component name="RunManager" selected="JUnit.VehicleFileDaoTest.getInfo">
+    <configuration name="VehicleFileDaoTest.getInfo" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="FastDFS" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.example.administrators.*" />
+          <option name="PATTERN" value="com.saltfish.example.demo.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.administrators.AdministratorsApplication" />
+      <option name="PACKAGE_NAME" value="com.saltfish.example.demo" />
+      <option name="MAIN_CLASS_NAME" value="com.saltfish.example.demo.VehicleFileDaoTest" />
+      <option name="METHOD_NAME" value="getInfo" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="xxxTest.getInfo" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="User_module" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.user.dao.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.example.user.dao" />
+      <option name="MAIN_CLASS_NAME" value="com.example.user.dao.xxxTest" />
+      <option name="METHOD_NAME" value="getInfo" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -302,8 +238,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.VehicleFileDaoTest.getInfo" />
+        <item itemvalue="JUnit.xxxTest.getInfo" />
         <item itemvalue="Spring Boot.UserApplication" />
-        <item itemvalue="Spring Boot.AdministratorsApplication" />
         <item itemvalue="Spring Boot.GateWayWebApplication" />
         <item itemvalue="Spring Boot.GateWayUserApplication" />
       </list>
@@ -339,7 +276,10 @@
       <workItem from="1664786279731" duration="6726000" />
       <workItem from="1664800487079" duration="2392000" />
       <workItem from="1664803816195" duration="1148000" />
-      <workItem from="1664805144431" duration="4155000" />
+      <workItem from="1664805144431" duration="4218000" />
+      <workItem from="1664842425935" duration="985000" />
+      <workItem from="1664843515865" duration="1736000" />
+      <workItem from="1664885101522" duration="5868000" />
     </task>
     <servers />
   </component>
@@ -356,5 +296,16 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/FastDFS/src/main/java/com/saltfish/example/service/FastDFSClient.java</url>
+          <line>30</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

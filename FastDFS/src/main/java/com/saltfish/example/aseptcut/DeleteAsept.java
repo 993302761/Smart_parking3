@@ -2,7 +2,7 @@ package com.saltfish.example.aseptcut;
 
 import com.saltfish.example.annotation.DFSDelete;
 import com.saltfish.example.service.FastDFSClient;
-import org.apache.ibatis.annotations.Mapper;
+
 import org.aspectj.lang.ProceedingJoinPoint;
 import org.aspectj.lang.Signature;
 import org.aspectj.lang.annotation.Around;
@@ -14,7 +14,6 @@ import org.springframework.stereotype.Component;
 import java.lang.reflect.Method;
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
-@Mapper
 @Component  //把普通pojo实例化到spring容器中
 @Aspect         //作用是把当前类标识为一个切面供容器读取
 public class DeleteAsept {
@@ -53,10 +52,14 @@ public class DeleteAsept {
         String groupname = PathParam.substring(1,ins);
         String MetaPath = PathParam.substring(ins+1);
         boolean res = (boolean) point.proceed();
-        if (FastDFSClient.deleteFile(groupname,MetaPath)==0)
+        if (FastDFSClient.deleteFile(groupname,MetaPath)==0){
             res = true;
-        else
+            System.out.println("cheng gong");
+        }
+        else{
             res = false;
+            System.out.println("shi bai");
+        }
         return res;
     }
 

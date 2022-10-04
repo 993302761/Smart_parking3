@@ -19,9 +19,11 @@ public class AdministratorsServiceImpl  {
     @Resource
     private AdministratorsDao administratorsDao;
 
-
-    @DubboReference(check = false ,version = "1.0")
+//    @DubboReference(mock = "force:return null")     //不再调用此服务，所有返回值都为null且不报错
+    @DubboReference
     private UserService userService;
+
+
 
     private static final Logger LOGGER= LoggerFactory.getLogger(AdministratorsServiceImpl.class);
 

@@ -5,7 +5,6 @@ import com.example.user.dao.UserDao;
 import com.example.user.entity.User_information;
 
 import com.saltfish.example.demo.VehicleFileDao;
-import net.devh.boot.grpc.server.service.GrpcService;
 import org.apache.dubbo.config.annotation.DubboService;
 import org.example.api.entity.parkingLots.Parking_for_user;
 import org.example.api.entity.user.User;
@@ -23,24 +22,23 @@ import java.util.List;
 import java.util.concurrent.TimeUnit;
 
 
-@DubboService(version = "1.0")
+@DubboService
+@Import({
+
+        com.saltfish.example.aseptcut.UploadAsept.class
+}
+)
 public class UserServiceImpl  implements UserService {
 
     @Resource
     private UserDao userDao;
 
 
-//    @Resource
-//    private VehicleFileDao vehicleFileDao;
+
 
 
     @Resource
     private RedisTemplate redisTemplate;
-
-
-
-
-
 
 
 

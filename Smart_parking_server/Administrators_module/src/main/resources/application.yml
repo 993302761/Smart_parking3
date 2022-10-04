@@ -49,6 +49,9 @@ ribbon:
       - ParkingLotService
 
 dubbo:
+  consumer:
+    check: false    #关闭启动时检查
+    retries: 2      #请求服务失败时，重试次数
   application:
     name: AdministratorServiceDubbo        #当前服务名字
     qos-enable: false

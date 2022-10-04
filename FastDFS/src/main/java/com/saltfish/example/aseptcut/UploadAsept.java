@@ -3,7 +3,6 @@ package com.saltfish.example.aseptcut;
 import com.saltfish.example.annotation.DFSUpload;
 import com.saltfish.example.annotation.UploadFileAddr;
 import com.saltfish.example.service.FastDFSClient;
-import org.apache.ibatis.annotations.Mapper;
 import org.aspectj.lang.ProceedingJoinPoint;
 import org.aspectj.lang.Signature;
 import org.aspectj.lang.annotation.Around;
@@ -20,7 +19,6 @@ import java.util.concurrent.ConcurrentHashMap;
 
 @Component
 @Aspect
-@Mapper
 public class UploadAsept {
     @Pointcut(value = "@annotation(com.saltfish.example.annotation.UploadFileAddr)")
     public void LoadPoint(){ }

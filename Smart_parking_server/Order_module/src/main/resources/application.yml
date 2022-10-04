@@ -67,3 +67,19 @@ ribbon:
     clients:
       - UserService
       - ParkingLotService
+
+dubbo:
+  consumer:
+    check: false    #关闭启动时检查
+    retries: 2      #请求服务失败时，重试次数
+  application:
+    name: OrderServiceDubbo       #当前服务名字
+    qos-enable: false   #关闭qos
+    enable-file-cache: false
+  #    register-mode: instance
+  registry:
+    address: nacos://localhost:8848       #注册中心地址
+  protocol:
+    name: tri    #协议
+    port: -1      #（ -1 表示自增端口，从 20880 开始）
+    host: localhost
