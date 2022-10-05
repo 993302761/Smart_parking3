@@ -2,7 +2,11 @@ package com.example.user.serviceImpl;
 
 
 import lombok.extern.slf4j.Slf4j;
+import org.apache.dubbo.config.annotation.DubboReference;
+import org.apache.dubbo.config.annotation.DubboService;
 import org.example.api.entity.order.Order;
+import org.example.api.service.OrderService;
+import org.example.api.service.ParkingLotService;
 import org.springframework.amqp.rabbit.connection.CorrelationData;
 import org.springframework.amqp.rabbit.core.RabbitTemplate;
 import org.springframework.data.redis.core.RedisTemplate;
@@ -14,11 +18,14 @@ import java.util.UUID;
 
 @Service
 @Slf4j
-
 public class UserOrderServiceImpl {
 
 
+    @DubboReference
+    private ParkingLotService parkingLotService;
 
+    @DubboReference
+    private OrderService orderService;
 
     @Resource
     private RabbitTemplate rabbitTemplate;
@@ -36,32 +43,31 @@ public class UserOrderServiceImpl {
      */
     public String  generate_order (String user_name,String license_plate_number,String parking_lot_number,String UUID){
 
-//        String key=UserServiceImpl.md5(user_name+UUID);
-//        Boolean hasKey = redisTemplate.hasKey(key);
-//        if (!hasKey){
-//            return "找不到此用户";
-//        }
-//        int num = (int) redisTemplate.opsForValue().get(key);
-//        if(num==1){
-//            return "您还有订单未完成，请完成后再预约";
-//        }
-//        long l = System.currentTimeMillis();
-//        String s = orderFeignService.generate_order(user_name, license_plate_number, parking_lot_number,l);
-//        if (s==null){
-//            return "错误";
-//        }
-//        String s1=user_name + '-' + parking_lot_number + '-' + license_plate_number+'&'+l;
-//        if (s.equals(s1)){
-//            rabbitTemplate.convertAndSend("OrderExchange","Timeout",s,setConfirmCallback());
-//            Long aLong = redisTemplate.opsForValue().increment(key);
-//            if (aLong==-1){
-//                return "数据错误-3";
-//            }
-//            return "订单 "+s+" 已开始";
-//        }else {
-//            return s+" 失败";
-//        }
-        return null;
+        String key=UserServiceImpl.md5(user_name+UUID);
+        Boolean hasKey = redisTemplate.hasKey(key);
+        if (!hasKey){
+            return "找不到此用户";
+        }
+        int num = (int) redisTemplate.opsForValue().get(key);
+        if(num==1){
+            return "您还有订单未完成，请完成后再预约";
+        }
+        long l = System.currentTimeMillis();
+        String s = orderService.generate_order(user_name, license_plate_number, parking_lot_number,l);
+        if (s==null){
+            return "错误";
+        }
+        String s1=user_name + '-' + parking_lot_number + '-' + license_plate_number+'&'+l;
+        if (s.equals(s1)){
+            rabbitTemplate.convertAndSend("OrderExchange","Timeout",s,setConfirmCallback());
+            Long aLong = redisTemplate.opsForValue().increment(key);
+            if (aLong==-1){
+                return "数据错误-3";
+            }
+            return "订单 "+s+" 已开始";
+        }else {
+            return s+" 失败";
+        }
     }
 
 
@@ -73,8 +79,7 @@ public class UserOrderServiceImpl {
      * @return 是否成功
      */
     public Object findOrder (String user_name,String order_number){
-//        return orderFeignService.userGetParkingOrder(order_number);
-        return null;
+        return orderService.getOrderByNumber(order_number);
     }
 
 
@@ -108,8 +113,7 @@ public class UserOrderServiceImpl {
      * @return 用户订单
      */
     public List<Order> getOrderByUsername(String user_name) {
-//        return orderFeignService.getOrderByUsername(user_name);
-        return null;
+        return orderService.getOrderByUsername(user_name);
     }
 
 
@@ -120,23 +124,22 @@ public class UserOrderServiceImpl {
      * @return 是否成功
      */
     public String complete_Order (String user_name, String order_number, String UUID){
-//        String key=UserServiceImpl.md5(user_name+UUID);
-//        boolean hasKey = redisTemplate.hasKey(key);
-//        if(!hasKey){
-//            return "数据错误-1";
-//        }
-//        int o = (int) redisTemplate.opsForValue().get(key);
-//        if (!(o==1)){
-//            return "数据错误-2";
-//        }
-//
-//        rabbitTemplate.convertAndSend("IntegralExchange","addIntegral",user_name,setConfirmCallback());
-//        String s = orderFeignService.complete_Order(user_name, order_number);
-//        if (s.equals("支付完成")){
-//            redisTemplate.opsForValue().decrement(key);
-//        }
-//        return s;
-        return null;
+        String key=UserServiceImpl.md5(user_name+UUID);
+        boolean hasKey = redisTemplate.hasKey(key);
+        if(!hasKey){
+            return "数据错误-1";
+        }
+        int o = (int) redisTemplate.opsForValue().get(key);
+        if (!(o==1)){
+            return "数据错误-2";
+        }
+
+        rabbitTemplate.convertAndSend("IntegralExchange","addIntegral",user_name,setConfirmCallback());
+        String s = orderService.complete_Order( order_number);
+        if (s.equals("支付完成")){
+            redisTemplate.opsForValue().decrement(key);
+        }
+        return s;
     }
 
 
@@ -148,13 +151,12 @@ public class UserOrderServiceImpl {
      * @return 是否成功
      */
     public String app_cancellation_Order (String user_name,String order_number,String UUID){
-//        String s = orderFeignService.app_cancellation_Order(user_name, order_number);
-//        if (s.equals("订单已取消")){
-//            String key=UserServiceImpl.md5(user_name+UUID);
-//            redisTemplate.opsForValue().decrement(key);
-//        }
-//        return s;
-        return null;
+        String s = orderService.app_cancellation_Order(order_number);
+        if (s.equals("订单已取消")){
+            String key=UserServiceImpl.md5(user_name+UUID);
+            redisTemplate.opsForValue().decrement(key);
+        }
+        return s;
     }
 
 
@@ -165,8 +167,7 @@ public class UserOrderServiceImpl {
      * @return 是否成功
      */
     public Object get_parking_lot ( String city){
-//        return parkingLotFeignService.get_parking_lot(city);
-        return null;
+        return parkingLotService.get_parking_lot(city);
     }
 
 }

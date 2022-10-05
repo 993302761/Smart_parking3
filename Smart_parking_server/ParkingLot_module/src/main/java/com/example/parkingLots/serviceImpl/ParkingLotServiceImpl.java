@@ -3,15 +3,17 @@ package com.example.parkingLots.serviceImpl;
 import com.example.parkingLots.dao.ParkingLotDao;
 import com.example.parkingLots.entity.Parking_lot_information;
 
+import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.lang3.BooleanUtils;
+import org.apache.dubbo.config.annotation.DubboReference;
 import org.apache.dubbo.config.annotation.DubboService;
 import org.example.api.entity.parkingLots.Parking;
 import org.example.api.entity.parkingLots.Parking_for_user;
+import org.example.api.service.OrderService;
 import org.example.api.service.ParkingLotService;
 import org.springframework.data.geo.*;
 import org.springframework.data.redis.connection.RedisGeoCommands;
 import org.springframework.data.redis.core.RedisTemplate;
-import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;
 import java.util.ArrayList;
@@ -21,6 +23,7 @@ import java.util.concurrent.TimeUnit;
 import java.util.stream.Collectors;
 
 @DubboService
+@Slf4j
 public class ParkingLotServiceImpl implements ParkingLotService {
 
     @Resource
@@ -29,8 +32,8 @@ public class ParkingLotServiceImpl implements ParkingLotService {
     @Resource
     private RedisTemplate<String,Object> redisTemplate;
 
-    @Resource
-    private OrderFeignService orderFeignService;
+    @DubboReference
+    private OrderService orderService;
 
 
 
@@ -209,7 +212,7 @@ public class ParkingLotServiceImpl implements ParkingLotService {
      * @return 是否成功
      */
     public String parking_cancellation_Order (String parking_lot_number, String order_number){
-        return orderFeignService.parking_cancellation_Order(parking_lot_number,order_number);
+        return orderService.cancelOrder(order_number);
     }
 
 
@@ -234,7 +237,15 @@ public class ParkingLotServiceImpl implements ParkingLotService {
         List<Parking_for_user> new_parking_lot=new ArrayList<>();
         for (int i = 0; i < parking_lot.size(); i++) {
             Parking_for_user p=parking_lot.get(i);
+            if (p==null){
+                log.info("错误1");
+                return null;
+            }
             Boolean hasKey = redisTemplate.hasKey(p.getParking_lot_number());
+            if (hasKey==null){
+                log.info("错误2");
+                return null;
+            }
             if(BooleanUtils.isTrue(hasKey) ){
                 Object  s =  redisTemplate.opsForHash().get(parking_lot.get(i).getParking_lot_number(),"Available_place_num");
                 if (s==null){

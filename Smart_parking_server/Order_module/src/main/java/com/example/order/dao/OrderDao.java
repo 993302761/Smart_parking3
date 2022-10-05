@@ -27,7 +27,7 @@ public interface OrderDao {
     /**
      * 检查进行中的订单
      * */
-    @Select("SELECT count(1) FROM User WHERE user_name =#{user_name} and (order_status=\"进行中\" or  order_status=\"未支付\")")
+    @Select("SELECT count(1) FROM Order_information WHERE user_name =#{user_name} and (order_status=\"进行中\" or  order_status=\"未支付\")")
     int checkOpenOrder(@Param("user_name") String user_name,@Param("order_number") String order_number);
 
 

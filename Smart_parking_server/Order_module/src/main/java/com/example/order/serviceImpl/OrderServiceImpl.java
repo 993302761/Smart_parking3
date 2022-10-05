@@ -3,11 +3,13 @@ package com.example.order.serviceImpl;
 import com.example.order.dao.OrderDao;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.lang3.BooleanUtils;
+import org.apache.dubbo.config.annotation.DubboReference;
 import org.apache.dubbo.config.annotation.DubboService;
 import org.example.api.entity.order.Order;
 import org.example.api.service.OrderService;
+import org.example.api.service.ParkingLotService;
+import org.example.api.service.VehicleService;
 import org.springframework.data.redis.core.RedisTemplate;
-import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;
 import java.sql.Timestamp;
@@ -23,11 +25,11 @@ public class OrderServiceImpl implements OrderService {
     @Resource
     private OrderDao orderDao;
 
-    @Resource
-    private ParkingLotFeignService parkingLotFeignService;
+    @DubboReference
+    private ParkingLotService parkingLotService;
 
-    @Resource
-    private VehicleFeignService vehicleFeignService;
+    @DubboReference
+    private VehicleService vehicleService;
 
     @Resource
     private RedisTemplate<String,Object> redisTemplate;
@@ -65,7 +67,7 @@ public class OrderServiceImpl implements OrderService {
             return "错误-1";
         }
         if (BooleanUtils.isFalse(key)) {
-            int check=vehicleFeignService.check_license_plate_number(user_name,license_plate_number);
+            int check= vehicleService.check_license_plate_number(user_name,license_plate_number);
             if (check==0){
                 return "未注册车辆信息";
             }else if (check==-1){
@@ -308,7 +310,7 @@ public class OrderServiceImpl implements OrderService {
     public String setBilling_rules(String parking_lot_number){
         Object billingRules =redisTemplate.opsForHash().get(parking_lot_number, "billing_rules");
         if (billingRules==null){
-            String billing_rules=parkingLotFeignService.getParkingBilling_rules(parking_lot_number);
+            String billing_rules= parkingLotService.getParkingBilling_rules(parking_lot_number);
             if (billing_rules==null){
                 return "停车场不存在";
             }else if (billing_rules.equals("系统繁忙，查找停车场名失败，请稍后再试")){

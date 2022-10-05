@@ -76,7 +76,7 @@ public class    OrderController {
 
 
 
-    @ApiOperation(value = "查找订单")
+    @ApiOperation(value = "检查是否有未完成订单")
     @ApiImplicitParams({
             @ApiImplicitParam(name = "user_name", value = "用户名", required = true, dataType = "String"),
             @ApiImplicitParam(name = "order_number", value = "订单编号", required = true, dataType = "String")

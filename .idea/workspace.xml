@@ -5,30 +5,38 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5165a8d4-14ee-4222-9aca-054a42b0ef5a" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/FastDFS/src/main/java/com/saltfish/example/aseptcut/DeleteAsept.java" beforeDir="false" afterPath="$PROJECT_DIR$/FastDFS/src/main/java/com/saltfish/example/aseptcut/DeleteAsept.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FastDFS/src/main/java/com/saltfish/example/aseptcut/DownLoadAsept.java" beforeDir="false" afterPath="$PROJECT_DIR$/FastDFS/src/main/java/com/saltfish/example/aseptcut/DownLoadAsept.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FastDFS/src/main/java/com/saltfish/example/aseptcut/FileInfoAsept.java" beforeDir="false" afterPath="$PROJECT_DIR$/FastDFS/src/main/java/com/saltfish/example/aseptcut/FileInfoAsept.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FastDFS/src/main/java/com/saltfish/example/aseptcut/UpdateAsept.java" beforeDir="false" afterPath="$PROJECT_DIR$/FastDFS/src/main/java/com/saltfish/example/aseptcut/UpdateAsept.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FastDFS/src/main/java/com/saltfish/example/aseptcut/UploadAsept.java" beforeDir="false" afterPath="$PROJECT_DIR$/FastDFS/src/main/java/com/saltfish/example/aseptcut/UploadAsept.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FastDFS/src/main/java/com/saltfish/example/demo/VehicleFileDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/FastDFS/src/main/java/com/saltfish/example/demo/VehicleFileDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FastDFS/src/main/java/com/saltfish/example/service/FastDFSClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/FastDFS/src/main/java/com/saltfish/example/service/FastDFSClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GateWayServer/GateWay_APP/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/GateWayServer/GateWay_APP/target/classes/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GateWayServer/GateWay_Web/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/GateWayServer/GateWay_Web/target/classes/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Smart_parking_server/Integral_module/src/main/java/com/example/Integral/config/RibbonRule.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Smart_parking_server/Integral_module/src/main/java/com/example/Integral/config/SelfNacosDiscovery.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Smart_parking_server/Order_module/src/main/java/com/example/order/config/RibbonRule.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Smart_parking_server/Order_module/src/main/java/com/example/order/config/SelfNacosDiscovery.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Smart_parking_server/ParkingLot_module/src/main/java/com/example/parkingLots/config/RibbonRule.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Smart_parking_server/ParkingLot_module/src/main/java/com/example/parkingLots/config/SelfNacosDiscovery.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Smart_parking_server/User_module/src/main/java/com/example/user/config/RibbonRule.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Smart_parking_server/Vehicle_module/src/main/java/com/example/vehicle/config/RibbonRule.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Smart_parking_server/Vehicle_module/src/main/java/com/example/vehicle/config/SelfNacosDiscovery.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GateWayServer/GateWay_APP/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/GateWayServer/GateWay_APP/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GateWayServer/GateWay_Web/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/GateWayServer/GateWay_Web/src/main/resources/application.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Smart_parking_server/Administrators_module/src/main/java/com/example/administrators/service/AdministratorsServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/Smart_parking_server/Administrators_module/src/main/java/com/example/administrators/service/AdministratorsServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Smart_parking_server/Administrators_module/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/Smart_parking_server/Administrators_module/src/main/resources/application.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Smart_parking_server/Administrators_module/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/Smart_parking_server/Administrators_module/target/classes/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Smart_parking_server/BasicTools/src/main/proto/Integral.proto" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Smart_parking_server/BasicTools/src/main/proto/Order.proto" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Smart_parking_server/BasicTools/src/main/proto/ParkingLot.proto" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Smart_parking_server/BasicTools/src/main/proto/User.proto" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Smart_parking_server/BasicTools/src/main/proto/Vehicle.proto" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Smart_parking_server/Integral_module/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/Smart_parking_server/Integral_module/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Smart_parking_server/Order_module/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/Smart_parking_server/Order_module/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Smart_parking_server/ParkingLot_module/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/Smart_parking_server/ParkingLot_module/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Smart_parking_server/User_module/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Smart_parking_server/User_module/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Smart_parking_server/User_module/src/main/java/com/example/user/UserApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/Smart_parking_server/User_module/src/main/java/com/example/user/UserApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Smart_parking_server/User_module/src/main/java/com/example/user/proto/UserProto.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Smart_parking_server/User_module/src/main/java/com/example/user/proto/UserServiceGrpc.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Smart_parking_server/Order_module/src/main/java/com/example/order/OrderApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/Smart_parking_server/Order_module/src/main/java/com/example/order/OrderApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Smart_parking_server/Order_module/src/main/java/com/example/order/controller/OrderController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Smart_parking_server/Order_module/src/main/java/com/example/order/controller/OrderController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Smart_parking_server/Order_module/src/main/java/com/example/order/dao/OrderDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/Smart_parking_server/Order_module/src/main/java/com/example/order/dao/OrderDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Smart_parking_server/Order_module/src/main/java/com/example/order/serviceImpl/OrderServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/Smart_parking_server/Order_module/src/main/java/com/example/order/serviceImpl/OrderServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Smart_parking_server/ParkingLot_module/src/main/java/com/example/parkingLots/ParkingLotsApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/Smart_parking_server/ParkingLot_module/src/main/java/com/example/parkingLots/ParkingLotsApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Smart_parking_server/ParkingLot_module/src/main/java/com/example/parkingLots/serviceImpl/ParkingLotServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/Smart_parking_server/ParkingLot_module/src/main/java/com/example/parkingLots/serviceImpl/ParkingLotServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Smart_parking_server/User_module/src/main/java/com/example/user/serviceImpl/UserOrderServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/Smart_parking_server/User_module/src/main/java/com/example/user/serviceImpl/UserOrderServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Smart_parking_server/User_module/src/main/java/com/example/user/serviceImpl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/Smart_parking_server/User_module/src/main/java/com/example/user/serviceImpl/UserServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Smart_parking_server/User_module/src/main/proto/User.proto" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Smart_parking_server/User_module/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/Smart_parking_server/User_module/src/main/resources/application.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Smart_parking_server/User_module/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/Smart_parking_server/User_module/target/classes/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Smart_parking_server/Vehicle_module/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/Smart_parking_server/Vehicle_module/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Smart_parking_server/Vehicle_module/src/main/java/com/example/vehicle/VehicleApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/Smart_parking_server/Vehicle_module/src/main/java/com/example/vehicle/VehicleApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Smart_parking_server/Vehicle_module/src/main/java/com/example/vehicle/serviceImpl/VehicleServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/Smart_parking_server/Vehicle_module/src/main/java/com/example/vehicle/serviceImpl/VehicleServiceImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -149,11 +157,11 @@
       <recent name="com.example.user.dao" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.example.vehicle.config" />
       <recent name="com.example.user.config" />
-      <recent name="com.example.vehicle.serviceImpl" />
-      <recent name="com.example.user.serviceImpl" />
-      <recent name="com.example.parkingLots.serviceImpl" />
-      <recent name="com.example.order.serviceImpl" />
+      <recent name="com.example.parkingLots.config" />
+      <recent name="com.example.Integral.config" />
+      <recent name="com.example.order.config" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -164,39 +172,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.VehicleFileDaoTest.getInfo">
-    <configuration name="VehicleFileDaoTest.getInfo" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="FastDFS" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.saltfish.example.demo.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.saltfish.example.demo" />
-      <option name="MAIN_CLASS_NAME" value="com.saltfish.example.demo.VehicleFileDaoTest" />
-      <option name="METHOD_NAME" value="getInfo" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="xxxTest.getInfo" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="User_module" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.example.user.dao.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.example.user.dao" />
-      <option name="MAIN_CLASS_NAME" value="com.example.user.dao.xxxTest" />
-      <option name="METHOD_NAME" value="getInfo" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Spring Boot.GateWayWebApplication">
     <configuration name="GateWayUserApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="GateWay_APP" />
       <extension name="coverage">
@@ -223,26 +199,52 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UserApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <module name="User_module" />
+    <configuration name="OrderApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="Order_module" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.example.user.*" />
+          <option name="PATTERN" value="com.example.order.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.user.UserApplication" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.order.OrderApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ParkingLotsApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="ParkingLot_module" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.parkingLots.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.parkingLots.ParkingLotsApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="VehicleApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="Vehicle_module" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.vehicle.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.vehicle.VehicleApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.VehicleFileDaoTest.getInfo" />
-        <item itemvalue="JUnit.xxxTest.getInfo" />
-        <item itemvalue="Spring Boot.UserApplication" />
+        <item itemvalue="Spring Boot.ParkingLotsApplication" />
+        <item itemvalue="Spring Boot.OrderApplication" />
         <item itemvalue="Spring Boot.GateWayWebApplication" />
         <item itemvalue="Spring Boot.GateWayUserApplication" />
+        <item itemvalue="Spring Boot.VehicleApplication" />
       </list>
     </recent_temporary>
   </component>
@@ -279,7 +281,8 @@
       <workItem from="1664805144431" duration="4218000" />
       <workItem from="1664842425935" duration="985000" />
       <workItem from="1664843515865" duration="1736000" />
-      <workItem from="1664885101522" duration="5868000" />
+      <workItem from="1664885101522" duration="6253000" />
+      <workItem from="1664958047793" duration="5723000" />
     </task>
     <servers />
   </component>
@@ -302,9 +305,18 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/FastDFS/src/main/java/com/saltfish/example/service/FastDFSClient.java</url>
-          <line>30</line>
+          <line>29</line>
           <option name="timeStamp" value="2" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/Smart_parking_server/ParkingLot_module/src/main/java/com/example/parkingLots/serviceImpl/ParkingLotServiceImpl.java</url>
+          <line>228</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.NumberFormatException" package="java.lang" />
+          <option name="timeStamp" value="4" />
+        </breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>

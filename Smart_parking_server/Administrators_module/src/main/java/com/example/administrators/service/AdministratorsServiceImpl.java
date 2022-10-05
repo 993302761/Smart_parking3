@@ -5,6 +5,8 @@ import com.example.administrators.entity.Administrators;
 
 import org.apache.dubbo.config.annotation.DubboReference;
 import org.example.api.entity.user.User;
+import org.example.api.service.OrderService;
+import org.example.api.service.ParkingLotService;
 import org.example.api.service.UserService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -23,6 +25,11 @@ public class AdministratorsServiceImpl  {
     @DubboReference
     private UserService userService;
 
+    @DubboReference
+    private OrderService orderService;
+
+    @DubboReference
+    private ParkingLotService parkingLotService;
 
 
     private static final Logger LOGGER= LoggerFactory.getLogger(AdministratorsServiceImpl.class);
@@ -67,8 +74,7 @@ public class AdministratorsServiceImpl  {
      * @return 获取停车场列表
      */
     public Object getAllParking() {
-//        return parkingLotFeignService.getAllParking();
-        return null;
+        return parkingLotService.getAllParking();
     }
 
 
@@ -77,8 +83,7 @@ public class AdministratorsServiceImpl  {
      * @return 获取订单列表
      */
     public Object getAllOrder() {
-//        return orderFeignService.getAllOrders();
-        return null;
+        return orderService.getAllOrders();
     }
 
 
@@ -92,8 +97,7 @@ public class AdministratorsServiceImpl  {
      * @return 是否成功
      */
     public String updateParking(String pctr_id, String parking_lot_name, String parking_in_the_city, Integer parking_spaces_num, float billing_rules) {
-//        return parkingLotFeignService.updateParking(pctr_id, parking_lot_name, parking_in_the_city, parking_spaces_num, billing_rules);
-        return null;
+        return parkingLotService.updateParking(pctr_id, parking_lot_name, parking_in_the_city, parking_spaces_num, billing_rules);
     }
 
 
@@ -104,8 +108,7 @@ public class AdministratorsServiceImpl  {
      * @return 是否成功
      */
     public String cancelOrder( String order_number) {
-//        return orderFeignService.cancelOrder(order_number);
-        return null;
+        return orderService.cancelOrder(order_number);
     }
 
 

@@ -1,33 +1,32 @@
 server:
-  port: 9003
+  port: 9001
+
+#spring:
+#  jackson:
+#    default-property-inclusion: non_null   #Json处理时忽略null
+
 
 spring:
 
   application:
-    name: UserService
+    #  服务名称------服务名称不能使用下划线，删除下划线或者使用中划线
+    name: OrderService
 
-  datasource:
-    url: jdbc:mysql://localhost:3306/Smart_parking_data?useUnicode=true&characterEncoding=UTF-8
-    username: root
-    password: "001124"
-    driver-class-name: com.mysql.cj.jdbc.Driver
-
-    #rabbitmq相关配置
   rabbitmq:
     host: localhost
     port: 5672
     username: guest
-    password:  guest
+    password: guest
     listener:
       simple:
         prefetch: 1   #每次只能获取一条消息，处理完才能获取下一条（提升消息处理速度，避免消息堆积）
-    publisher-confirm-type: correlated   #开启publisher-confirm，支持两种类型
-                                          #simple同步等待confirm结果，直到超时
-                                          #correlated 异步回调，定义一个ConfirmCallBack,MQ返回结果时回调ConfirmCallBack
-    publisher-returns: true       #开启publisher-returns，同样是CallBack机制，不过是定义ReturnCallBack
-    template:
-      mandatory: true         #定义消息路由失败时策略，true则调用ReturnCallBack，false直接丢弃消息
-
+        acknowledge-mode: auto    #设置消息确认机制
+        retry:
+          enabled: true   #开启消费失败重试
+          initial-interval: 1000    #设置失败等待时长为1s
+          multiplier: 2   #下次失败的等待时长的倍数
+          max-attempts: 3  #最大重试次数  次数耗尽则丢弃
+          stateless: true   #true为无状态，false为有，如果业务中包含事务则改为false
 
 
   redis:
@@ -38,6 +37,15 @@ spring:
         min-idle: 0 #最小空闲连接，默认
         max-wait: 100ms #连接等待时间
 
+
+
+  datasource:
+    url: jdbc:mysql://localhost:3306/Smart_parking_order?useUnicode=true&characterEncoding=UTF-8
+    username: root
+    password: "001124"
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+
   cloud:
     nacos:
       server-addr: localhost:8848      #nacos服务地址
@@ -45,8 +53,8 @@ spring:
       #服务间调用默认使用轮训，优先使用相同集群的服务，若不可用，再找其他的
       discovery:
         cluster-name: ServerMaster
-#        ephemeral: true    #设置为临时实例
-#        namespace: e202b325-d714-407e-9e26-80b28704e370   #填写命名空间id，用于做环境隔离
+        ephemeral: false    #设置为非临时实例
+#        namespace:    #填写命名空间id，用于做环境隔离
 
 
 ribbon:
@@ -57,19 +65,15 @@ ribbon:
     enabled: true
     #指定饥饿加载的服务名称
     clients:
-      - OrderService
+      - UserService
       - ParkingLotService
-      - VehicleService
-      - IntegralService
-
 
 dubbo:
-  
   consumer:
     check: false    #关闭启动时检查
     retries: 2      #请求服务失败时，重试次数
   application:
-    name: UserServiceDubbo       #当前服务名字
+    name: OrderServiceDubbo       #当前服务名字
     qos-enable: false   #关闭qos
     enable-file-cache: false
   #    register-mode: instance
@@ -79,4 +83,3 @@ dubbo:
     name: tri    #协议
     port: -1      #（ -1 表示自增端口，从 20880 开始）
     host: localhost
-

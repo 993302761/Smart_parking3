@@ -5,10 +5,13 @@ import com.example.user.dao.UserDao;
 import com.example.user.entity.User_information;
 
 import com.saltfish.example.demo.VehicleFileDao;
+import org.apache.dubbo.config.annotation.DubboReference;
 import org.apache.dubbo.config.annotation.DubboService;
 import org.example.api.entity.parkingLots.Parking_for_user;
 import org.example.api.entity.user.User;
+import org.example.api.service.ParkingLotService;
 import org.example.api.service.UserService;
+import org.example.api.service.VehicleService;
 import org.springframework.context.annotation.Import;
 import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.stereotype.Service;
@@ -18,6 +21,7 @@ import javax.annotation.Resource;
 import java.io.IOException;
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
+import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
 
@@ -34,8 +38,15 @@ public class UserServiceImpl  implements UserService {
     private UserDao userDao;
 
 
+    @DubboReference
+    private ParkingLotService parkingLotService;
+
+    @DubboReference
+    private VehicleService vehicleService;
 
 
+//    @Resource
+//    private VehicleFileDao vehicleFileDao;
 
     @Resource
     private RedisTemplate redisTemplate;
@@ -120,7 +131,7 @@ public class UserServiceImpl  implements UserService {
                                    MultipartFile registration,
                                    MultipartFile driving_permit){
 
-//        int vehicleNumber = vehicleFeignService.check_license_plate_number(user_name, license_plate_number);
+//        int vehicleNumber = vehicleService.check_license_plate_number(user_name, license_plate_number);
 //        if (vehicleNumber==1){
 //            return "该车辆已注册，请勿重复注册";
 //        }else if (vehicleNumber>1){
@@ -137,7 +148,7 @@ public class UserServiceImpl  implements UserService {
 //        }
 //        try {
 //
-//            String s = vehicleFeignService.vehicle_binding(user_name, user_id, license_plate_number, vehicle_photos_address.replace('/', '&'), registration_address.replace('/', '&'), driving_permit_address.replace('/', '&'));
+//            String s = vehicleService.add_Vehicle(user_name, user_id, license_plate_number, vehicle_photos_address.replace('/', '&'), registration_address.replace('/', '&'), driving_permit_address.replace('/', '&'));
 //            return s;
 //        }catch (Exception e){
 //            vehicleFileDao.deleteVehicleFile(vehicle_photos_address.replace('/','&'));
@@ -160,8 +171,7 @@ public class UserServiceImpl  implements UserService {
      * @return 是否成功
      */
     public String deleteVehicle (String user_name, String license_plate_number){
-//        return vehicleFeignService.deleteVehicle(user_name,license_plate_number);
-        return null;
+        return vehicleService.delete_User_Vehicle(user_name,license_plate_number);
     }
 
 
@@ -174,8 +184,7 @@ public class UserServiceImpl  implements UserService {
      * @return 是否成功
      */
     public List<String> getUserVehicle (String user_name){
-//        return vehicleFeignService.getUserVehicle(user_name);
-        return null;
+        return vehicleService.getUserVehicle(user_name);
     }
 
 
@@ -237,8 +246,7 @@ public class UserServiceImpl  implements UserService {
      * @param city 当前所在城市
      */
     public Object getParkingLot (String parking_lot_name,String city){
-//        return parkingLotFeignService.getParkingLot(parking_lot_name,city);
-        return null;
+        return parkingLotService.getParkingLot(parking_lot_name,city);
     }
 
 
@@ -337,15 +345,14 @@ public class UserServiceImpl  implements UserService {
      */
     public List<User> getAllUsers() {
         List<User> users = userDao.getAllUsers();
-//        List<User> newUsers=new ArrayList<>();
-//        for (int i = 0; i < users.size(); i++) {
-//            List<String> vehicle=vehicleFeignService.getUserVehicle(users.get(i).getUser_name());
-//            User t=users.get(i);
-//            t.setVehicle(vehicle);
-//            newUsers.add(t);
-//        }
-//        return newUsers;
-        return users;
+        List<User> newUsers=new ArrayList<>();
+        for (int i = 0; i < users.size(); i++) {
+            List<String> vehicle=vehicleService.getUserVehicle(users.get(i).getUser_name());
+            User t=users.get(i);
+            t.setVehicle(vehicle);
+            newUsers.add(t);
+        }
+        return newUsers;
     }
 
 
@@ -356,11 +363,10 @@ public class UserServiceImpl  implements UserService {
      * TODO：删除用户
      */
     public String delete_User (String user_name,String UUID){
-//        userDao.delete_User(user_name);
-//        String key=md5(user_name+UUID);
-//        redisTemplate.delete(key);
-//        return vehicleFeignService.deleteAllVehicle(user_name);
-        return null;
+        userDao.delete_User(user_name);
+        String key=md5(user_name+UUID);
+        redisTemplate.delete(key);
+        return vehicleService.delete_All_Vehicle(user_name);
     }
 
 
@@ -374,27 +380,7 @@ public class UserServiceImpl  implements UserService {
      * @return 停车场列表
      */
     public List<Parking_for_user> peripheralParking(String latitude, String longitude, String city) {
-//        return parkingLotFeignService.peripheralParking(latitude, longitude, city);
-        return null;
+        return parkingLotService.peripheralParking(latitude, longitude, city);
     }
 
-//
-//    @Override
-//    public void getAllUsers(Empty request, StreamObserver<UserProto.userListResponse> responseObserver) {
-//        List<User> allUsers = getAllUsers();
-//        UserProto.userResponse.Builder builder=UserProto.userResponse.newBuilder();
-//        List<UserProto.userResponse> userList=new ArrayList<>();
-//        for (int i = 0; i < allUsers.size(); i++) {
-//            builder.clear();
-//            builder.setUserName(allUsers.get(i).getUser_name())
-//                    .setUserId(allUsers.get(i).getUser_id());
-//            List<String> vehicle = allUsers.get(i).getVehicle();
-//            for (int j = 0; j < vehicle.size(); j++) {
-//                builder.setVehicle(j,vehicle.get(j));
-//            }
-//            userList.add(builder.build());
-//        }
-//        UserProto.userListResponse response = UserProto.userListResponse.newBuilder().setUserList(allUsers.size(),builder).build();
-//
-//    }
 }

@@ -1,14 +1,14 @@
 package com.example.order;
 
+import org.apache.dubbo.config.spring.context.annotation.EnableDubbo;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 
 
 @SpringBootApplication
-//@EnableFeignClients(basePackages = "com.feign.api")
-//@EnableCircuitBreaker
-////Hystrix开启
-//@EnableHystrix
+@EnableDubbo        //开启基于注解的dubbo功能
+@EnableDiscoveryClient
 public class OrderApplication {
 
     public static void main(String[] args) {

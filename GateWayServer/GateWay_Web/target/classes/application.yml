@@ -13,7 +13,7 @@ spring:
       #服务间调用默认使用轮训，优先使用相同集群的服务，若不可用，再找其他的
       discovery:
         cluster-name: ServerMaster    #集群名
-        ephemeral: false    #设置为非临时实例
+        ephemeral: true    #设置为临时实例
     #        namespace:    #填写命名空间id，用于做环境隔离
 
     gateway:
