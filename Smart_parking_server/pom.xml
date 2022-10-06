@@ -48,6 +48,18 @@
             <artifactId>commons-lang3</artifactId>
         </dependency>
 
+        <!-- 实例化sentinel规则到nacos-->
+        <dependency>
+            <groupId>com.alibaba.csp</groupId>
+            <artifactId>sentinel-datasource-nacos</artifactId>
+        </dependency>
+
+        <!--sentinel启动器-->
+        <dependency>
+            <groupId>com.alibaba.cloud</groupId>
+            <artifactId>spring-cloud-starter-alibaba-sentinel</artifactId>
+        </dependency>
+
         <!--    nacos客户端依赖包     -->
         <dependency>
             <groupId>com.alibaba.cloud</groupId>

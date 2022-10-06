@@ -41,6 +41,21 @@ spring:
         cluster-name: ServerMaster
         ephemeral: false    #设置为非临时实例
 #        namespace:    #填写命名空间id，用于做环境隔离
+    sentinel:   #采用懒加载
+      transport:
+        dashboard: localhost:8080
+        port: 8719
+        #这个端口配置会在应用对应的机器上启动一个 Http Server，该 Server 会与 Sentinel 控制台做交互。
+        #比如 Sentinel 控制台添加了1个限流规则，会把规则数据 push 给这个 Http Server 接收，Http Server 再将规则注册到 Sentinel 中。
+        #默认8719，假如被占用了会自动从8719开始依次+1扫描。直至找到未被占用的端口
+
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+
 
 
 ribbon:

@@ -47,6 +47,13 @@ spring:
         cluster-name: ServerMaster
 #        ephemeral: true    #设置为临时实例
 #        namespace: e202b325-d714-407e-9e26-80b28704e370   #填写命名空间id，用于做环境隔离
+    sentinel:   #采用懒加载
+      transport:
+        dashboard: localhost:8080
+        port: 8719
+        #这个端口配置会在应用对应的机器上启动一个 Http Server，该 Server 会与 Sentinel 控制台做交互。
+        #比如 Sentinel 控制台添加了1个限流规则，会把规则数据 push 给这个 Http Server 接收，Http Server 再将规则注册到 Sentinel 中。
+        #默认8719，假如被占用了会自动从8719开始依次+1扫描。直至找到未被占用的端口
 
 
 ribbon:
@@ -62,9 +69,14 @@ ribbon:
       - VehicleService
       - IntegralService
 
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+
 
 dubbo:
-  
   consumer:
     check: false    #关闭启动时检查
     retries: 2      #请求服务失败时，重试次数
@@ -79,4 +91,5 @@ dubbo:
     name: tri    #协议
     port: -1      #（ -1 表示自增端口，从 20880 开始）
     host: localhost
-
+  provider:
+    timeout: 5000 #提供者超时时间
