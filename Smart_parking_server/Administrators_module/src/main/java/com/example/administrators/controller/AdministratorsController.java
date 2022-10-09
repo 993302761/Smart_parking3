@@ -1,5 +1,6 @@
 package com.example.administrators.controller;
 
+import com.alibaba.csp.sentinel.annotation.SentinelResource;
 import com.example.administrators.service.AdministratorsServiceImpl;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiImplicitParam;
@@ -33,6 +34,7 @@ public class AdministratorsController {
     }
 
 
+//    @SentinelResource(value = "唯一id",blockHandler = "兜底函数")
     @ApiOperation(value = "查找所有用户")
     @GetMapping(value = "/getAllUsers", produces = "application/json; charset=utf-8")
     public Object getAllUsers()  {
