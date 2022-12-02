@@ -4,7 +4,6 @@ package com.example.user.serviceImpl;
 import com.example.user.dao.UserDao;
 import com.example.user.entity.User_information;
 
-import com.saltfish.example.demo.VehicleFileDao;
 import org.apache.dubbo.config.annotation.DubboReference;
 import org.apache.dubbo.config.annotation.DubboService;
 import org.example.api.entity.parkingLots.Parking_for_user;
@@ -27,11 +26,6 @@ import java.util.concurrent.TimeUnit;
 
 
 @DubboService
-@Import({
-
-        com.saltfish.example.aseptcut.UploadAsept.class
-}
-)
 public class UserServiceImpl  implements UserService {
 
     @Resource

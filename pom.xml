@@ -9,7 +9,6 @@
   <version>1.0-SNAPSHOT</version>
   <modules>
     <module>Smart_parking_server</module>
-    <module>FastDFS</module>
     <module>GateWayServer</module>
   </modules>
   <packaging>pom</packaging>

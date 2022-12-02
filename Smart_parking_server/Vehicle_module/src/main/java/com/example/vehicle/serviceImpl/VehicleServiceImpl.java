@@ -2,13 +2,9 @@ package com.example.vehicle.serviceImpl;
 
 
 import com.example.vehicle.dao.VehicleDao;
-import com.example.vehicle.entity.Vehicle;
-import com.saltfish.example.demo.VehicleFileDao;
 import org.apache.dubbo.config.annotation.DubboService;
 import org.example.api.service.VehicleService;
 import org.hibernate.Hibernate;
-import org.springframework.context.annotation.Import;
-import org.springframework.stereotype.Service;
 import org.springframework.web.multipart.MultipartFile;
 
 import javax.annotation.Resource;
@@ -21,10 +17,7 @@ import java.sql.SQLException;
 import java.util.List;
 
 @DubboService
-@Import({
-        com.saltfish.example.demo.VehicleFileDao.class,
-        com.saltfish.example.aseptcut.DeleteAsept.class
-})
+
 public class VehicleServiceImpl implements VehicleService {
 
     @Resource
