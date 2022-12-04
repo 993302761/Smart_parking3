@@ -112,6 +112,12 @@ public class MinioServicempl {
         return filename;
     }
 
+    /**
+     *
+     * @param bucket
+     * @param fileName
+     * @param Load_Path
+     */
     public void Download(String bucket,String fileName,String Load_Path) {
         try {
             String[] aa = fileName.split("/");
@@ -122,7 +128,17 @@ public class MinioServicempl {
         }
     }
 
-    
+    public  void Delete(String bucket,String filename){
+        try {
+            minioClient.removeObject(bucket, filename);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+
+
+
+
 
 
 

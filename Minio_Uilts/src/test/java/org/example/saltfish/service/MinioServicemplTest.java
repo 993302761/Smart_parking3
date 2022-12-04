@@ -74,7 +74,9 @@ class MinioServicemplTest {
     void download(){
         m.Download("aaa","aaa/111.jpg","/opt");
     }
-
-
+    @Test
+    void del(){
+        m.Delete("aaa","aaa/111.jpg");
+    }
 
 }
