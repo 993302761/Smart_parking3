@@ -1,0 +1,42 @@
+{
+  "groups": [
+    {
+      "name": "minio",
+      "type": "org.example.saltfish.config.Minio_Config",
+      "sourceType": "org.example.saltfish.config.Minio_Config"
+    }
+  ],
+  "properties": [
+    {
+      "name": "minio.access-key",
+      "type": "java.lang.String",
+      "sourceType": "org.example.saltfish.config.Minio_Config"
+    },
+    {
+      "name": "minio.bucket",
+      "type": "java.lang.String",
+      "sourceType": "org.example.saltfish.config.Minio_Config"
+    },
+    {
+      "name": "minio.port",
+      "type": "java.lang.Integer",
+      "sourceType": "org.example.saltfish.config.Minio_Config"
+    },
+    {
+      "name": "minio.secret-key",
+      "type": "java.lang.String",
+      "sourceType": "org.example.saltfish.config.Minio_Config"
+    },
+    {
+      "name": "minio.server",
+      "type": "java.lang.String",
+      "sourceType": "org.example.saltfish.config.Minio_Config"
+    },
+    {
+      "name": "minio.url-prefix",
+      "type": "java.lang.String",
+      "sourceType": "org.example.saltfish.config.Minio_Config"
+    }
+  ],
+  "hints": []
+}
