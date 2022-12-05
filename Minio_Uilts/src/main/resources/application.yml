@@ -13,7 +13,7 @@ minio:
   accessKey: admin
   secretKey: 12345678
   bucket: aaa
-  urlprefix: /minio/
+
 
 server:
   port: 8080

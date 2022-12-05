@@ -64,8 +64,6 @@ class MinioServicemplTest {
         File f = new File("/opt/1.jpg");
         FileItem fileItem = getMultipartFile(f, "1.jpg");
         MultipartFile multipartFile = new CommonsMultipartFile(fileItem);
-
-
         System.out.println(m.upload("aaa","111",multipartFile));
     }
 
