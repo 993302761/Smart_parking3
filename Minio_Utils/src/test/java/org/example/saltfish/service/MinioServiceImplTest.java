@@ -12,14 +12,15 @@ import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.web.multipart.MultipartFile;
 import org.springframework.web.multipart.commons.CommonsMultipartFile;
 
+import javax.annotation.Resource;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.OutputStream;
 @SpringBootTest
-class MinioServicemplTest {
-    @Autowired
-    MinioServicempl m;
+class MinioServiceImplTest {
+    @Resource
+    MinioServiceImpl m;
     @Test
     void existBucket() {
 
@@ -39,6 +40,7 @@ class MinioServicemplTest {
     @Test
     void removeBucket() {
     }
+
     public FileItem getMultipartFile(File file, String fieldName) {
         FileItemFactory factory = new DiskFileItemFactory(16, null);
         FileItem item = (FileItem) factory.createItem(fieldName, ContentType.APPLICATION_OCTET_STREAM.toString(), true, file.getName());
@@ -61,7 +63,7 @@ class MinioServicemplTest {
 
     @Test
     void upload() {
-        File f = new File("/opt/1.jpg");
+        File f = new File("/home/lyq/图片/123.jpeg");
         FileItem fileItem = getMultipartFile(f, "1.jpg");
         MultipartFile multipartFile = new CommonsMultipartFile(fileItem);
         System.out.println(m.upload("aaa","111",multipartFile));

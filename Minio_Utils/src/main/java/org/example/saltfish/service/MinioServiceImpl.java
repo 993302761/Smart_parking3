@@ -1,38 +1,24 @@
 package org.example.saltfish.service;
 
 import io.minio.*;
-import io.minio.errors.*;
-import org.apache.commons.lang3.BooleanUtils;
-import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
-import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.multipart.MultipartFile;
 
-import javax.servlet.http.HttpServletResponse;
-import java.io.IOException;
+import javax.annotation.Resource;
 import java.io.InputStream;
-import java.io.OutputStream;
-import java.net.URLEncoder;
-import java.security.InvalidKeyException;
-import java.security.NoSuchAlgorithmException;
-import java.util.HashMap;
-import java.util.Map;
-import java.util.logging.Logger;
-
-import static jdk.nashorn.internal.runtime.regexp.joni.Config.log;
 
 /**
  * @author saltfish
  */
 @Service
-public class MinioServicempl {
-    @Autowired
+public class MinioServiceImpl {
+    @Resource
     private MinioClient minioClient;
 
-    @Value("${minio.bucket}")
-    public String bucketName;
+//    @Value("${minio.bucket}")
+//    public String bucketName;
 
     /**
      * 判断bucket是否存在
@@ -102,7 +88,7 @@ public class MinioServicempl {
             InputStream inputStream = file.getInputStream();
             // 上传到minio服务器
             minioClient.putObject(PutObjectArgs.builder()
-                    .bucket(this.bucketName)
+                    .bucket("aaa")
                     .object(filename)
                     .stream(inputStream, -1L, 10485760L)
                     .build());

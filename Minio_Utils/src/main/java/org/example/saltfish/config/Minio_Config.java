@@ -1,26 +1,38 @@
 package org.example.saltfish.config;
 
 import io.minio.MinioClient;
+import lombok.Getter;
+import lombok.Setter;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.stereotype.Component;
 
 @Configuration
-@ConfigurationProperties(prefix = "minio")
+//@Component
+//@ConfigurationProperties(prefix = "minio")
+@Getter
+@Setter
 public class Minio_Config {
+
+    @Value("http://127.0.0.1")
     private String server;
 
+    @Value("9000")
     private int port;
 
+    @Value("admin")
     private String accessKey;
 
+    @Value("12345678")
     private String secretKey;
 
-    // 桶名
-    private String bucket;
+//    // 桶名
+//    private String bucket;
 
-    // 统一前缀
-    private String urlPrefix;
+//    // 统一前缀
+//    private String urlPrefix;
 
     /**
      * 建造者模式
@@ -34,50 +46,4 @@ public class Minio_Config {
                 .build();
     }
 
-    public void setServer(String server) {
-        this.server = server;
-    }
-
-    public void setPort(int port) {
-        this.port = port;
-    }
-
-    public void setAccessKey(String accessKey) {
-        this.accessKey = accessKey;
-    }
-
-    public void setSecretKey(String secretKey) {
-        this.secretKey = secretKey;
-    }
-
-    public void setBucket(String bucket) {
-        this.bucket = bucket;
-    }
-
-
-    public void setUrlPrefix(String urlPrefix) { this.urlPrefix = urlPrefix; }
-
-    public String getUrlPrefix() {
-        return urlPrefix;
-    }
-
-    public String getServer() {
-        return server;
-    }
-
-    public int getPort() {
-        return port;
-    }
-
-    public String getAccessKey() {
-        return accessKey;
-    }
-
-    public String getSecretKey() {
-        return secretKey;
-    }
-
-    public String getBucket() {
-        return bucket;
-    }
 }

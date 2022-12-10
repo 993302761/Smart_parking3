@@ -7,12 +7,13 @@ spring:
   application:
     name: minio_test
 
-minio:
-  server: http://192.168.10.103
-  port: 9000
-  accessKey: admin
-  secretKey: 12345678
-  bucket: aaa
+
+#minio:
+#  server: http://192.168.0.103
+#  port: 9000
+#  accessKey: admin
+#  secretKey: 12345678
+#  bucket: aaa
 
 
 server:

@@ -5,21 +5,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5165a8d4-14ee-4222-9aca-054a42b0ef5a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/MinioScript/minio_reboot.sh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MinioScript/minio_start.sh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MinioScript/minio_stop.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Minio_Utils/Minio_Utils.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/0598d3db-fbde-4eb4-8f91-e61d7b817ea3.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/0598d3db-fbde-4eb4-8f91-e61d7b817ea3.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/26d55418-7a45-4234-8865-832233d69f0a.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/26d55418-7a45-4234-8865-832233d69f0a.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Minio_Uilts/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Minio_Utils/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Minio_Uilts/src/main/java/org/example/saltfish/ApplictionMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/Minio_Utils/src/main/java/org/example/saltfish/ApplictionMain.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Minio_Uilts/src/main/java/org/example/saltfish/Contoller/Test.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Minio_Uilts/src/main/java/org/example/saltfish/config/Minio_Config.java" beforeDir="false" afterPath="$PROJECT_DIR$/Minio_Utils/src/main/java/org/example/saltfish/config/Minio_Config.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Minio_Uilts/src/main/java/org/example/saltfish/service/MinioServicempl.java" beforeDir="false" afterPath="$PROJECT_DIR$/Minio_Utils/src/main/java/org/example/saltfish/service/MinioServicempl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Minio_Uilts/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/Minio_Utils/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Minio_Uilts/src/test/java/org/example/saltfish/service/MinioServicemplTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Minio_Utils/src/test/java/org/example/saltfish/service/MinioServicemplTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Minio_Uilts/target/classes/META-INF/spring-configuration-metadata.json" beforeDir="false" afterPath="$PROJECT_DIR$/Minio_Utils/target/classes/META-INF/spring-configuration-metadata.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Minio_Uilts/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/Minio_Utils/target/classes/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Minio_Utils/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Minio_Utils/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Minio_Utils/src/main/java/org/example/saltfish/ApplictionMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/Minio_Utils/src/main/java/org/example/saltfish/ApplicationMain.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Minio_Utils/src/main/java/org/example/saltfish/config/Minio_Config.java" beforeDir="false" afterPath="$PROJECT_DIR$/Minio_Utils/src/main/java/org/example/saltfish/config/Minio_Config.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Minio_Utils/src/main/java/org/example/saltfish/service/MinioServicempl.java" beforeDir="false" afterPath="$PROJECT_DIR$/Minio_Utils/src/main/java/org/example/saltfish/service/MinioServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Minio_Utils/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/Minio_Utils/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Minio_Utils/src/test/java/org/example/saltfish/service/MinioServicemplTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Minio_Utils/src/test/java/org/example/saltfish/service/MinioServiceImplTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Minio_Utils/target/classes/META-INF/spring-configuration-metadata.json" beforeDir="false" afterPath="$PROJECT_DIR$/Minio_Utils/target/classes/META-INF/spring-configuration-metadata.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Minio_Utils/target/classes/application.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Smart_parking_server/User_module/src/main/java/com/example/user/dao/xxx.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Smart_parking_server/User_module/src/test/java/com/example/user/dao/xxxTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Smart_parking_server/User_module/src/test/java/com/example/user/dao/xxxTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -115,7 +116,7 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.37320977" />
-    <property name="settings.editor.selected.configurable" value="MavenSettings" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="ReactorSettings">
     <option name="notificationShown" value="true" />
@@ -159,6 +160,38 @@
     </option>
   </component>
   <component name="RunManager" selected="Spring Boot.AdministratorsApplication">
+    <configuration name="MinioServiceImplTest.existBucket" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Minio_Utils" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.saltfish.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.example.saltfish.service" />
+      <option name="MAIN_CLASS_NAME" value="org.example.saltfish.service.MinioServiceImplTest" />
+      <option name="METHOD_NAME" value="existBucket" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MinioServiceImplTest.upload" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Minio_Utils" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.saltfish.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.example.saltfish.service" />
+      <option name="MAIN_CLASS_NAME" value="org.example.saltfish.service.MinioServiceImplTest" />
+      <option name="METHOD_NAME" value="upload" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="AdministratorsApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="Administrators_module" />
       <extension name="coverage">
@@ -172,28 +205,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="OrderApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <module name="Order_module" />
+    <configuration name="ApplicationMain" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="Minio_Utils" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.example.order.*" />
+          <option name="PATTERN" value="org.example.saltfish.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.order.OrderApplication" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ParkingLotsApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <module name="ParkingLot_module" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.example.parkingLots.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.parkingLots.ParkingLotsApplication" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="org.example.saltfish.ApplicationMain" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -211,26 +231,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="VehicleApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <module name="Vehicle_module" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.example.vehicle.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.vehicle.VehicleApplication" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Spring Boot.UserApplication" />
-        <item itemvalue="Spring Boot.ParkingLotsApplication" />
-        <item itemvalue="Spring Boot.OrderApplication" />
-        <item itemvalue="Spring Boot.VehicleApplication" />
         <item itemvalue="Spring Boot.AdministratorsApplication" />
+        <item itemvalue="Spring Boot.UserApplication" />
+        <item itemvalue="Spring Boot.ApplicationMain" />
+        <item itemvalue="JUnit.MinioServiceImplTest.existBucket" />
+        <item itemvalue="JUnit.MinioServiceImplTest.upload" />
       </list>
     </recent_temporary>
   </component>
@@ -279,7 +286,10 @@
       <workItem from="1670332022409" duration="2382000" />
       <workItem from="1670337825235" duration="456000" />
       <workItem from="1670388719685" duration="1514000" />
-      <workItem from="1670639428191" duration="1295000" />
+      <workItem from="1670639428191" duration="3124000" />
+      <workItem from="1670655089054" duration="640000" />
+      <workItem from="1670655804216" duration="3726000" />
+      <workItem from="1670659849687" duration="972000" />
     </task>
     <servers />
   </component>

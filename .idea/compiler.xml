@@ -10,7 +10,6 @@
         <module name="ParkingLot_module" />
         <module name="GateWay_APP" />
         <module name="Order_module" />
-        <module name="Minio_Utils" />
         <module name="Administrators_module" />
         <module name="Integral_module" />
         <module name="BasicTools" />

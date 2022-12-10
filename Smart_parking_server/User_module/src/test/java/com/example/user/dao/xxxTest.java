@@ -8,10 +8,5 @@ import static org.junit.jupiter.api.Assertions.*;
 
 @SpringBootTest
 class xxxTest {
-    @Autowired
-    xxx xx;
-    @Test
-    void getInfo() {
-        xx.deleteVehicleFile("nmbvvnvhghvhg");
-    }
+
 }

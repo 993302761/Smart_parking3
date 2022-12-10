@@ -13,14 +13,10 @@
       "sourceType": "org.example.saltfish.config.Minio_Config"
     },
     {
-      "name": "minio.bucket",
-      "type": "java.lang.String",
-      "sourceType": "org.example.saltfish.config.Minio_Config"
-    },
-    {
       "name": "minio.port",
       "type": "java.lang.Integer",
-      "sourceType": "org.example.saltfish.config.Minio_Config"
+      "sourceType": "org.example.saltfish.config.Minio_Config",
+      "defaultValue": 0
     },
     {
       "name": "minio.secret-key",
@@ -29,11 +25,6 @@
     },
     {
       "name": "minio.server",
-      "type": "java.lang.String",
-      "sourceType": "org.example.saltfish.config.Minio_Config"
-    },
-    {
-      "name": "minio.url-prefix",
       "type": "java.lang.String",
       "sourceType": "org.example.saltfish.config.Minio_Config"
     }
