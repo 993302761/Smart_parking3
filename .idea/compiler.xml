@@ -13,6 +13,7 @@
         <module name="Administrators_module" />
         <module name="Integral_module" />
         <module name="BasicTools" />
+        <module name="Minio_Uilts" />
         <module name="Vehicle_module" />
         <module name="GateWay_Web" />
         <module name="User_module" />
@@ -33,6 +34,7 @@
       <module name="GateWay_APP" options="-parameters" />
       <module name="GateWay_Web" options="-parameters" />
       <module name="Integral_module" options="-parameters" />
+      <module name="Minio_Uilts" options="-parameters" />
       <module name="NacosServer" options="-parameters" />
       <module name="Order_module" options="-parameters" />
       <module name="ParkingLot_module" options="-parameters" />

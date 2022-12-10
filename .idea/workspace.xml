@@ -5,15 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5165a8d4-14ee-4222-9aca-054a42b0ef5a" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FastDFS/FastDFS.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Smart_parking_server/Administrators_module/Administrators_module.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Smart_parking_server/Integral_module/Integral_module.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Smart_parking_server/Order_module/Order_module.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Smart_parking_server/ParkingLot_module/ParkingLot_module.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Smart_parking_server/Smart_parking_server.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Smart_parking_server/User_module/User_module.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Smart_parking_server/Vehicle_module/Vehicle_module.iml" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -267,7 +261,11 @@
       <workItem from="1665129930314" duration="2337000" />
       <workItem from="1665314421198" duration="9000" />
       <workItem from="1665314758975" duration="1326000" />
-      <workItem from="1669994071724" duration="681000" />
+      <workItem from="1669994071724" duration="1487000" />
+      <workItem from="1669996046189" duration="9000" />
+      <workItem from="1670332022409" duration="2382000" />
+      <workItem from="1670337825235" duration="456000" />
+      <workItem from="1670388719685" duration="1514000" />
     </task>
     <servers />
   </component>
