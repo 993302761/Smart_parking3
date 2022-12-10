@@ -10,7 +10,7 @@
   <modules>
     <module>Smart_parking_server</module>
     <module>GateWayServer</module>
-      <module>Minio_Uilts</module>
+      <module>Minio_Utils</module>
   </modules>
   <packaging>pom</packaging>
 

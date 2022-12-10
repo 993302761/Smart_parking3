@@ -5,9 +5,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5165a8d4-14ee-4222-9aca-054a42b0ef5a" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/MinioScript/minio_reboot.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MinioScript/minio_start.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MinioScript/minio_stop.sh" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Minio_Uilts/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Minio_Utils/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Minio_Uilts/src/main/java/org/example/saltfish/ApplictionMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/Minio_Utils/src/main/java/org/example/saltfish/ApplictionMain.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Minio_Uilts/src/main/java/org/example/saltfish/Contoller/Test.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Minio_Uilts/src/main/java/org/example/saltfish/config/Minio_Config.java" beforeDir="false" afterPath="$PROJECT_DIR$/Minio_Utils/src/main/java/org/example/saltfish/config/Minio_Config.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Minio_Uilts/src/main/java/org/example/saltfish/service/MinioServicempl.java" beforeDir="false" afterPath="$PROJECT_DIR$/Minio_Utils/src/main/java/org/example/saltfish/service/MinioServicempl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Minio_Uilts/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/Minio_Utils/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Minio_Uilts/src/test/java/org/example/saltfish/service/MinioServicemplTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Minio_Utils/src/test/java/org/example/saltfish/service/MinioServicemplTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Minio_Uilts/target/classes/META-INF/spring-configuration-metadata.json" beforeDir="false" afterPath="$PROJECT_DIR$/Minio_Utils/target/classes/META-INF/spring-configuration-metadata.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Minio_Uilts/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/Minio_Utils/target/classes/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -93,7 +106,7 @@
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
     <property name="jdk.selected.JAVA_MODULE" value="1.8" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/MinioScript" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -109,11 +122,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/MinioScript" />
+      <recent name="$PROJECT_DIR$/Smart_parking_server" />
       <recent name="$PROJECT_DIR$/SentinelScript" />
       <recent name="$PROJECT_DIR$/GateWayServer/GateWay_Web/src/main/resources" />
       <recent name="$PROJECT_DIR$/GateWayServer/GateWay_APP/src/main/resources" />
-      <recent name="$PROJECT_DIR$/ProjectSetUp" />
-      <recent name="$PROJECT_DIR$/Smart_parking_server/User_module/src/main/java/com/example/user/proto" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/GateWayServer" />
@@ -266,6 +279,7 @@
       <workItem from="1670332022409" duration="2382000" />
       <workItem from="1670337825235" duration="456000" />
       <workItem from="1670388719685" duration="1514000" />
+      <workItem from="1670639428191" duration="1295000" />
     </task>
     <servers />
   </component>
