@@ -1,6 +1,6 @@
 package com.example.order.controller;
 
-import com.example.order.serviceImpl.OrderServiceImpl;
+import com.example.order.service.OrderServiceImpl;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiImplicitParam;
 import io.swagger.annotations.ApiImplicitParams;

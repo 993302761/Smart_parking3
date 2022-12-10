@@ -1,4 +1,4 @@
-package com.example.Integral.serviceImpl;
+package com.example.Integral.service;
 
 import com.example.Integral.dao.IntegralDao;
 import org.springframework.stereotype.Service;

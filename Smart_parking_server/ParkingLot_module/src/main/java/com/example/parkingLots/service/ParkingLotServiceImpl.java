@@ -1,4 +1,4 @@
-package com.example.parkingLots.serviceImpl;
+package com.example.parkingLots.service;
 
 import com.example.parkingLots.dao.ParkingLotDao;
 import com.example.parkingLots.entity.Parking_lot_information;

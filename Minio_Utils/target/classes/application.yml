@@ -1,0 +1,20 @@
+spring:
+  # 配置文件上传大小限制
+  servlet:
+    multipart:
+      max-file-size: 200MB
+      max-request-size: 200MB
+  application:
+    name: minio_test
+
+
+#minio:
+#  server: http://192.168.0.103
+#  port: 9000
+#  accessKey: admin
+#  secretKey: 12345678
+#  bucket: aaa
+
+
+server:
+  port: 8080

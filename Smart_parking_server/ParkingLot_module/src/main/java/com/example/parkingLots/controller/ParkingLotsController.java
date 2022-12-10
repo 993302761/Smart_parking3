@@ -1,6 +1,6 @@
 package com.example.parkingLots.controller;
 
-import com.example.parkingLots.serviceImpl.ParkingLotServiceImpl;
+import com.example.parkingLots.service.ParkingLotServiceImpl;
 
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiImplicitParam;

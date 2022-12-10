@@ -79,7 +79,7 @@ public class MinioServiceImpl {
      * @return
      */
 
-    public String upload(String username,String CarCard,MultipartFile file) {
+    public String addVehicleFile(String username,String CarCard,MultipartFile file) {
         String[] Ches  = file.getName().split("\\.");
 
 
@@ -114,7 +114,8 @@ public class MinioServiceImpl {
         }
     }
 
-    public  void Delete(String bucket,String filename){
+
+    public  void deleteVehicleFile(String bucket,String filename){
         try {
             minioClient.removeObject(bucket, filename);
         } catch (Exception e) {

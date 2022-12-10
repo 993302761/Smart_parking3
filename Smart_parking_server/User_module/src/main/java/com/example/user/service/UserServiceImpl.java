@@ -1,4 +1,4 @@
-package com.example.user.serviceImpl;
+package com.example.user.service;
 
 
 import com.example.user.dao.UserDao;
@@ -11,9 +11,8 @@ import org.example.api.entity.user.User;
 import org.example.api.service.ParkingLotService;
 import org.example.api.service.UserService;
 import org.example.api.service.VehicleService;
-import org.springframework.context.annotation.Import;
+import org.example.saltfish.service.MinioServiceImpl;
 import org.springframework.data.redis.core.RedisTemplate;
-import org.springframework.stereotype.Service;
 import org.springframework.web.multipart.MultipartFile;
 
 import javax.annotation.Resource;
@@ -39,8 +38,8 @@ public class UserServiceImpl  implements UserService {
     private VehicleService vehicleService;
 
 
-//    @Resource
-//    private VehicleFileDao vehicleFileDao;
+    @Resource
+    private MinioServiceImpl minioService;
 
     @Resource
     private RedisTemplate redisTemplate;
@@ -125,33 +124,31 @@ public class UserServiceImpl  implements UserService {
                                    MultipartFile registration,
                                    MultipartFile driving_permit){
 
-//        int vehicleNumber = vehicleService.check_license_plate_number(user_name, license_plate_number);
-//        if (vehicleNumber==1){
-//            return "该车辆已注册，请勿重复注册";
-//        }else if (vehicleNumber>1){
-//            return "数据错误";
-//        }else if (vehicleNumber<0){
-//            return "访问错误";
-//        }
-//
-//        String vehicle_photos_address = vehicleFileDao.addVehicleFile(vehicle_photos);
-//        String registration_address = vehicleFileDao.addVehicleFile(registration);
-//        String driving_permit_address = vehicleFileDao.addVehicleFile(driving_permit);
-//        if (vehicle_photos_address==null||registration_address==null||driving_permit_address==null){
-//            return "照片保存错误";
-//        }
-//        try {
-//
-//            String s = vehicleService.add_Vehicle(user_name, user_id, license_plate_number, vehicle_photos_address.replace('/', '&'), registration_address.replace('/', '&'), driving_permit_address.replace('/', '&'));
-//            return s;
-//        }catch (Exception e){
-//            vehicleFileDao.deleteVehicleFile(vehicle_photos_address.replace('/','&'));
-//            vehicleFileDao.deleteVehicleFile(registration_address.replace('/','&'));
-//            vehicleFileDao.deleteVehicleFile(driving_permit_address.replace('/','&'));
-//            e.printStackTrace();
-//            return "绑定信息失败";
-//        }
-        return null;
+        int vehicleNumber = vehicleService.check_license_plate_number(user_name, license_plate_number);
+        if (vehicleNumber==1){
+            return "该车辆已注册，请勿重复注册";
+        }else if (vehicleNumber>1){
+            return "数据错误";
+        }else if (vehicleNumber<0){
+            return "访问错误";
+        }
+
+        String vehicle_photos_address = minioService.addVehicleFile(user_name,license_plate_number+"-1",vehicle_photos);
+        String registration_address = minioService.addVehicleFile(user_name,license_plate_number+"-2",registration);
+        String driving_permit_address = minioService.addVehicleFile(user_name,license_plate_number+"-3",driving_permit);
+        if (vehicle_photos_address==null||registration_address==null||driving_permit_address==null){
+            return "照片保存错误";
+        }
+        try {
+            String s = vehicleService.add_Vehicle(user_name, user_id, license_plate_number, vehicle_photos_address.replace('/', '&'), registration_address.replace('/', '&'), driving_permit_address.replace('/', '&'));
+            return s;
+        }catch (Exception e){
+            minioService.deleteVehicleFile(user_name,license_plate_number+"-1");
+            minioService.deleteVehicleFile(user_name,license_plate_number+"-2");
+            minioService.deleteVehicleFile(user_name,license_plate_number+"-3");
+            e.printStackTrace();
+            return "绑定信息失败";
+        }
     }
 
 

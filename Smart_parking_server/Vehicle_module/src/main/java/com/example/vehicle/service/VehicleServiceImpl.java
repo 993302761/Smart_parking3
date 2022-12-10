@@ -1,9 +1,11 @@
-package com.example.vehicle.serviceImpl;
+package com.example.vehicle.service;
 
 
 import com.example.vehicle.dao.VehicleDao;
+import com.example.vehicle.entity.Vehicle;
 import org.apache.dubbo.config.annotation.DubboService;
 import org.example.api.service.VehicleService;
+import org.example.saltfish.service.MinioServiceImpl;
 import org.hibernate.Hibernate;
 import org.springframework.web.multipart.MultipartFile;
 
@@ -24,8 +26,8 @@ public class VehicleServiceImpl implements VehicleService {
     private VehicleDao vehicleDao;
 
 
-//    @Resource
-//    private VehicleFileDao vehicleFileDao;
+    @Resource
+    private MinioServiceImpl minioService;
 
 
 
@@ -114,21 +116,20 @@ public class VehicleServiceImpl implements VehicleService {
      * @return 是否成功
      */
     public String delete_User_Vehicle(String user_name,String license_plate_number) {
-//        Vehicle user_vehicle = vehicleDao.find_User_Vehicle(user_name, license_plate_number);
-//        if (user_vehicle == null) {
-//            return "未绑定此车辆";
-//        }
-//
-//        vehicleFileDao.deleteVehicleFile(user_vehicle.getVehicle_photos());
-//        vehicleFileDao.deleteVehicleFile(user_vehicle.getDriving_permit());
-//        vehicleFileDao.deleteVehicleFile(user_vehicle.getRegistration());
-//        int i = vehicleDao.deleteUserVehicle(user_name, license_plate_number);
-//        if (i <= 0) {
-//            return "删除车辆信息失败";
-//        } else {
-//            return "删除成功";
-//        }
-        return null;
+        Vehicle user_vehicle = vehicleDao.find_User_Vehicle(user_name, license_plate_number);
+        if (user_vehicle == null) {
+            return "未绑定此车辆";
+        }
+
+        minioService.deleteVehicleFile(user_name,license_plate_number+"-1");
+        minioService.deleteVehicleFile(user_name,license_plate_number+"-2");
+        minioService.deleteVehicleFile(user_name,license_plate_number+"-3");
+        int i = vehicleDao.deleteUserVehicle(user_name, license_plate_number);
+        if (i <= 0) {
+            return "删除车辆信息失败";
+        } else {
+            return "删除成功";
+        }
     }
 
 
@@ -139,20 +140,19 @@ public class VehicleServiceImpl implements VehicleService {
      * @return 是否成功
      */
     public String delete_All_Vehicle(String user_name) {
-//        List<Vehicle> userVehicle = vehicleDao.find_Vehicle_Message(user_name);
-//        for (int i = 0; i < userVehicle.size(); i++) {
-//            Vehicle s = userVehicle.get(i);
-//            vehicleFileDao.deleteVehicleFile(s.getVehicle_photos());
-//            vehicleFileDao.deleteVehicleFile(s.getRegistration());
-//            vehicleFileDao.deleteVehicleFile(s.getDriving_permit());
-//        }
-//        int i = vehicleDao.deleteAllVehicle(user_name);
-//        if (i<=0){
-//            return "删除车辆信息失败";
-//        }else {
-//            return "删除成功";
-//        }
-        return null;
+        List<Vehicle> userVehicle = vehicleDao.find_Vehicle_Message(user_name);
+        for (int i = 0; i < userVehicle.size(); i++) {
+            Vehicle s = userVehicle.get(i);
+            minioService.deleteVehicleFile(user_name,s.getLicense_plate_number()+"-1");
+            minioService.deleteVehicleFile(user_name,s.getLicense_plate_number()+"-2");
+            minioService.deleteVehicleFile(user_name,s.getLicense_plate_number()+"-3");
+        }
+        int i = vehicleDao.deleteAllVehicle(user_name);
+        if (i<=0){
+            return "删除车辆信息失败";
+        }else {
+            return "删除成功";
+        }
     }
 
 

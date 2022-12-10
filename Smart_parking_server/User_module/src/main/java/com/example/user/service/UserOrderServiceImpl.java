@@ -1,9 +1,8 @@
-package com.example.user.serviceImpl;
+package com.example.user.service;
 
 
 import lombok.extern.slf4j.Slf4j;
 import org.apache.dubbo.config.annotation.DubboReference;
-import org.apache.dubbo.config.annotation.DubboService;
 import org.example.api.entity.order.Order;
 import org.example.api.service.OrderService;
 import org.example.api.service.ParkingLotService;

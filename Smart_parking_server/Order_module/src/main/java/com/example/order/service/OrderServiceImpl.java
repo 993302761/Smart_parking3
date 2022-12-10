@@ -1,4 +1,4 @@
-package com.example.order.serviceImpl;
+package com.example.order.service;
 
 import com.example.order.dao.OrderDao;
 import lombok.extern.slf4j.Slf4j;

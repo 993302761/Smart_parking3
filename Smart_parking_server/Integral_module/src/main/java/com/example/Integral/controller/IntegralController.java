@@ -1,6 +1,6 @@
 package com.example.Integral.controller;
 
-import com.example.Integral.serviceImpl.IntegralServiceImpl;
+import com.example.Integral.service.IntegralServiceImpl;
 import org.springframework.amqp.core.ExchangeTypes;
 import org.springframework.amqp.rabbit.annotation.*;
 import org.springframework.stereotype.Component;

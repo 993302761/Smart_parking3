@@ -64,9 +64,9 @@ class MinioServiceImplTest {
     @Test
     void upload() {
         File f = new File("/home/lyq/图片/123.jpeg");
-        FileItem fileItem = getMultipartFile(f, "1.jpg");
+        FileItem fileItem = getMultipartFile(f, "123.jpg");
         MultipartFile multipartFile = new CommonsMultipartFile(fileItem);
-        System.out.println(m.upload("aaa","111",multipartFile));
+        System.out.println(m.addVehicleFile("aaa","222",multipartFile));
     }
 
 
@@ -76,7 +76,7 @@ class MinioServiceImplTest {
     }
     @Test
     void del(){
-        m.Delete("aaa","aaa/111.jpg");
+        m.deleteVehicleFile("aaa","aaa/111.jpg");
     }
 
 }

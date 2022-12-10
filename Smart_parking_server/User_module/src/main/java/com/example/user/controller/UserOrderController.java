@@ -1,6 +1,6 @@
 package com.example.user.controller;
 
-import com.example.user.serviceImpl.UserOrderServiceImpl;
+import com.example.user.service.UserOrderServiceImpl;
 
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiImplicitParam;
