@@ -5,23 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5165a8d4-14ee-4222-9aca-054a42b0ef5a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Script/MinioScript/minio_reboot.sh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Script/MinioScript/minio_start.sh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Script/MinioScript/minio_stop.sh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Script/NacosScript/nacos_start.sh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Script/NacosScript/nacos_stop.sh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Script/RabbitmqScript/RabbitMQ_start.sh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Script/RabbitmqScript/RabbitMQ_stop.sh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Script/start.sh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Script/stop.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/26d55418-7a45-4234-8865-832233d69f0a.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/26d55418-7a45-4234-8865-832233d69f0a.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MinioScript/minio_reboot.sh" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MinioScript/minio_start.sh" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MinioScript/minio_stop.sh" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/NacosScript/nacos_start.sh" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/NacosScript/nacos_stop.sh" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SentinelScript/sentinel-dashboard-1.8.1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Smart_parking_server/Administrators_module/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/Smart_parking_server/Administrators_module/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Smart_parking_server/README.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Smart_parking_server/README.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -290,7 +276,14 @@
       <workItem from="1670723872122" duration="620000" />
       <workItem from="1670727381819" duration="904000" />
       <workItem from="1670728427736" duration="760000" />
-      <workItem from="1670729296698" duration="681000" />
+      <workItem from="1670729296698" duration="2062000" />
+      <workItem from="1670855475565" duration="16000" />
+      <workItem from="1670996314755" duration="610000" />
+      <workItem from="1671115593040" duration="84000" />
+      <workItem from="1671245162430" duration="604000" />
+      <workItem from="1671603848584" duration="11000" />
+      <workItem from="1671603973667" duration="407000" />
+      <workItem from="1671623997853" duration="304000" />
     </task>
     <servers />
   </component>
