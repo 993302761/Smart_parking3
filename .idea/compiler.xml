@@ -7,13 +7,12 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="ParkingLot_module" />
         <module name="GateWay_APP" />
+        <module name="ParkingLot_module" />
         <module name="Order_module" />
-        <module name="Minio_Utils" />
         <module name="Administrators_module" />
-        <module name="Integral_module" />
         <module name="BasicTools" />
+        <module name="Integral_module" />
         <module name="Vehicle_module" />
         <module name="GateWay_Web" />
         <module name="User_module" />

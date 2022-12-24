@@ -1,0 +1,30 @@
+//使用proto3语法
+syntax = "proto3";
+
+//不要拆分成多个类
+option java_multiple_files = false;
+//生成java类所在的包
+option java_package = "com.example.user.proto";
+//生成外层类的类名
+option java_outer_classname = "Geo";
+
+
+import "google/protobuf/empty.proto";
+
+// 对外提供的接口
+service Message {
+
+    rpc geo (pointRequest) returns (Replay) {}
+
+    rpc update(google.protobuf.Empty) returns (google.protobuf.Empty);
+}
+
+message pointRequest {
+    double x=10;
+    double y=20;
+}
+
+message Replay{
+    bool isSuccess=5;
+    repeated int32 data=10;
+}
