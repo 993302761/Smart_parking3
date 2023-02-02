@@ -5,15 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5165a8d4-14ee-4222-9aca-054a42b0ef5a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Smart_parking_server/User_module/src/main/java/com/example/user/proto/MessageGrpc.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Smart_parking_server/User_module/src/main/proto/Message.proto" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/26d55418-7a45-4234-8865-832233d69f0a.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/26d55418-7a45-4234-8865-832233d69f0a.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Minio_Utils/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Minio_Utils/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Smart_parking_server/User_module/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Smart_parking_server/User_module/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Smart_parking_server/User_module/target/classes/application.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Smart_parking_server/User_module/target/classes/static/upload.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Smart_parking_server/User_module/target/classes/static/upload2.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Minio_Utils/target/classes/application.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Smart_parking_server/Administrators_module/src/main/java/com/example/administrators/AdministratorsApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/Smart_parking_server/Administrators_module/src/main/java/com/example/administrators/AdministratorsApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Smart_parking_server/Administrators_module/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/Smart_parking_server/Administrators_module/target/classes/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Smart_parking_server/ParkingLot_module/src/main/java/com/example/parkingLots/dao/ParkingLotDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/Smart_parking_server/ParkingLot_module/src/main/java/com/example/parkingLots/dao/ParkingLotDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Smart_parking_server/ParkingLot_module/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/Smart_parking_server/ParkingLot_module/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Smart_parking_server/User_module/src/main/java/com/example/user/UserApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/Smart_parking_server/User_module/src/main/java/com/example/user/UserApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Smart_parking_server/User_module/src/main/java/com/example/user/entity/User_information.java" beforeDir="false" afterPath="$PROJECT_DIR$/Smart_parking_server/User_module/src/main/java/com/example/user/entity/User_information.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,14 +42,24 @@
     </file-type-list>
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Smart_parking_server/User_module/src/main/java/com/example/user/UserApplication.java" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Smart_parking_server/User_module/src/main/java/com/example/user/service/UserOrderServiceImpl.java" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Smart_parking_server/User_module/src/main/java/com/example/user/service/UserServiceImpl.java" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Smart_parking_server/User_module/src/main/resources/application.yml" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Smart_parking_server/User_module/src/main/java/com/example/user/proto/Geo.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Smart_parking_server/Vehicle_module/pom.xml" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Smart_parking_server/Administrators_module/src/main/java/com/example/administrators/AdministratorsApplication.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Smart_parking_server/User_module/pom.xml" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Smart_parking_server/Administrators_module/src/main/java/com/example/administrators/dao/AdministratorsDao.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Smart_parking_server/User_module/src/main/proto/Message.proto" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Smart_parking_server/ParkingLot_module/pom.xml" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Smart_parking_server/Administrators_module/src/main/java/com/example/administrators/entity/Administrators.java" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Smart_parking_server/Administrators_module/src/main/java/com/example/administrators/service/AdministratorsServiceImpl.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Smart_parking_server/User_module/src/main/java/com/example/user/UserApplication.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Smart_parking_server/Order_module/pom.xml" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Smart_parking_server/Administrators_module/pom.xml" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Smart_parking_server/BasicTools/pom.xml" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Smart_parking_server/Integral_module/pom.xml" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Smart_parking_server/User_module/src/main/java/com/example/user/proto/MessageGrpc.java" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Smart_parking_server/Administrators_module/src/main/java/com/example/administrators/controller/AdministratorsController.java" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="JpbToolWindowState">
@@ -60,6 +71,7 @@
     </option>
     <option name="myId2Visible">
       <map>
+        <entry key="com.haulmont.jpb.jpaInspector" value="false" />
         <entry key="com.haulmont.jpb.jpaPalette" value="false" />
         <entry key="com.haulmont.jpb.jpaStructure" value="false" />
       </map>
@@ -99,7 +111,7 @@
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
     <property name="jdk.selected.JAVA_MODULE" value="1.8" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/Smart_parking_server/User_module/src/main/java/com/example/user/proto" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../文档/project3.0" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -131,6 +143,9 @@
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
     </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.example.user.proto" />
+    </key>
     <key name="CreateTestDialog.RecentsKey">
       <recent name="com.saltfish.example.demo" />
       <recent name="com.example.user.dao" />
@@ -156,19 +171,16 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.MinioServiceImplTest.upload">
-    <configuration name="MinioServiceImplTest.upload" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Minio_Utils" />
+  <component name="RunManager" selected="Spring Boot.OrderApplication">
+    <configuration name="AdministratorsApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="Administrators_module" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.example.saltfish.service.*" />
+          <option name="PATTERN" value="com.example.administrators.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="org.example.saltfish.service" />
-      <option name="MAIN_CLASS_NAME" value="org.example.saltfish.service.MinioServiceImplTest" />
-      <option name="METHOD_NAME" value="upload" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.administrators.AdministratorsApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -212,26 +224,26 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="VehicleApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <module name="Vehicle_module" />
+    <configuration name="UserApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="User_module" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.example.vehicle.*" />
+          <option name="PATTERN" value="com.example.user.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.vehicle.VehicleApplication" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.user.UserApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.MinioServiceImplTest.upload" />
-        <item itemvalue="Spring Boot.IntegralApplication" />
-        <item itemvalue="Spring Boot.ParkingLotsApplication" />
         <item itemvalue="Spring Boot.OrderApplication" />
-        <item itemvalue="Spring Boot.VehicleApplication" />
+        <item itemvalue="Spring Boot.AdministratorsApplication" />
+        <item itemvalue="Spring Boot.UserApplication" />
+        <item itemvalue="Spring Boot.ParkingLotsApplication" />
+        <item itemvalue="Spring Boot.IntegralApplication" />
       </list>
     </recent_temporary>
   </component>
@@ -299,7 +311,31 @@
       <workItem from="1671696040866" duration="2150000" />
       <workItem from="1671855007235" duration="706000" />
       <workItem from="1671889494750" duration="1021000" />
-      <workItem from="1671890525272" duration="3181000" />
+      <workItem from="1671890525272" duration="3838000" />
+      <workItem from="1671940728758" duration="666000" />
+      <workItem from="1672017302761" duration="130000" />
+      <workItem from="1672018397575" duration="836000" />
+      <workItem from="1672020299446" duration="2673000" />
+      <workItem from="1672024042313" duration="7000" />
+      <workItem from="1672116773255" duration="5160000" />
+      <workItem from="1672195629504" duration="602000" />
+      <workItem from="1672229409918" duration="5000" />
+      <workItem from="1672578761609" duration="7000" />
+      <workItem from="1672581828764" duration="6000" />
+      <workItem from="1672793902134" duration="15000" />
+      <workItem from="1672793936588" duration="9000" />
+      <workItem from="1672847781279" duration="603000" />
+      <workItem from="1672909268860" duration="11000" />
+      <workItem from="1672920371673" duration="101000" />
+      <workItem from="1672936634602" duration="617000" />
+      <workItem from="1672937652080" duration="14000" />
+      <workItem from="1673074065133" duration="17000" />
+      <workItem from="1673776794750" duration="617000" />
+      <workItem from="1673778376482" duration="2209000" />
+      <workItem from="1673780640151" duration="30000" />
+      <workItem from="1674030946466" duration="2356000" />
+      <workItem from="1674101514008" duration="13000" />
+      <workItem from="1675304436744" duration="1968000" />
     </task>
     <servers />
   </component>
@@ -333,6 +369,10 @@
         <breakpoint enabled="true" type="java-exception">
           <properties class="java.lang.NumberFormatException" package="java.lang" />
           <option name="timeStamp" value="4" />
+        </breakpoint>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="org.apache.dubbo.rpc.RpcException" package="org.apache.dubbo.rpc" />
+          <option name="timeStamp" value="5" />
         </breakpoint>
       </breakpoints>
     </breakpoint-manager>

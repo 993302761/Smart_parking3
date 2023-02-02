@@ -9,7 +9,7 @@ import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 @SpringBootApplication
 @EnableDubbo        //开启基于注解的dubbo功能
 @EnableDiscoveryClient
-public class AdministratorsApplication {
+public class  AdministratorsApplication {
 
     public static void main(String[] args) {
         SpringApplication.run(AdministratorsApplication.class, args);
